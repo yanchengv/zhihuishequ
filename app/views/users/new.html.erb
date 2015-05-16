@@ -1,0 +1,11 @@
+<h1>注册</h1>
+
+<%=form_for @user,:url=>{action: 'create'} do |f|%>
+    <%=f.label :name%>
+    <%=f.text_field :name%>
+    <%= f.label :password%>
+    <%=f.password_field :password%>
+    <%= f.label :password_confirmation, "Confirmation" %>
+    <%= f.password_field :password_confirmation %>
+    <%=f.submit '提交'%>
+<%end%>
