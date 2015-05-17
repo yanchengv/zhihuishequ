@@ -1,3 +1,6 @@
+/**
+ * Created by git on 15-5-17.
+ */
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -13,4 +16,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-// require_tree .
+//= require classie
+//= require modernizr.custom
+//require_tree .

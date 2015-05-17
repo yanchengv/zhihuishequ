@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>智慧社区</title>
+  <%= stylesheet_link_tag    'mobile', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'mobile', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= render partial: 'layouts/mobile_header'%>
+<%= yield %>
+<%= render partial: 'layouts/mobile_footer'%>
+
+</body>
+</html>

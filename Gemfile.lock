@@ -27,6 +27,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    agent_orange (0.1.6)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.9)
     bcrypt-ruby (3.1.5)
@@ -110,6 +111,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  agent_orange (~> 0.1.6)
   bcrypt-ruby (~> 3.1.2)
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)

@@ -21,6 +21,12 @@ Rails.application.routes.draw do
      end
    end
 
+    resource :mobile_home  do
+      collection do
+        get 'home',to:'mobile_home#home'
+
+      end
+    end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
