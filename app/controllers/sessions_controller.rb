@@ -3,11 +3,14 @@ class SessionsController < ApplicationController
     def new
 
     end
+
+    #登录
    def create
      name=params[:sessions][:name]
      password=params[:sessions][:password]
      user = User.find_by(name:name)
      if user && user.authenticate(password)
+       #登录成功
        sign_in(user)
        redirect_to root_path
      else

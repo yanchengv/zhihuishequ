@@ -1,11 +1,11 @@
 <h1>注册</h1>
-
+  <font color="red"><%= flash[:flag]%></font>
 <%=form_for @user,:url=>{action: 'create'} do |f|%>
-    <%=f.label :name%>
+    <%=f.label '用户名'%>
     <%=f.text_field :name%>
-    <%= f.label :password%>
+    <%= f.label '密码'%>
     <%=f.password_field :password%>
-    <%= f.label :password_confirmation, "Confirmation" %>
+    <%= f.label :password_confirmation, "确认密码" %>
     <%= f.password_field :password_confirmation %>
     <%=f.submit '提交'%>
 <%end%>
