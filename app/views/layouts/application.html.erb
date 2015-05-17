@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Zhihuishequ</title>
+  <title>智慧社区</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+ <%= render partial: 'layouts/header'%>
 <%= yield %>
+<%= render partial: 'layouts/footer'%>
 
 </body>
 </html>

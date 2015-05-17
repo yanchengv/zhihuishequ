@@ -7,9 +7,19 @@ Rails.application.routes.draw do
   resource :users do
     collection do
      get 'new',to:'users#new'
+     get 'setting',to:'users#setting'
+     post 'update',to:'users#update'
      post 'create',to:'users#create'
     end
   end
+
+   resources :sessions do
+     collection do
+       get 'new',to:'sessions#new'
+       post 'create',to:'session#create'
+       match '/destroy', to: 'sessions#destroy', via: [:delete,:get]
+     end
+   end
 
 
   # Example of regular route:

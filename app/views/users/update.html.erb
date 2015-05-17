@@ -1,0 +1,8 @@
+<h1>修改</h1>
+ <div><font color="red"><%= flash[:flag]%></font></div>
+<%=form_for @user,:url=>{action: 'update',method: "post"} do |f|%>
+    <%=f.label :name%>
+    <%=f.text_field :name,value:@user.name %>
+
+    <%=f.submit '提交'%>
+<%end%>

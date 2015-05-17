@@ -1,0 +1,10 @@
+<h1>登录</h1>
+<div><font color="#ff0e2c"><%= flash[:error]%></font></div>
+
+<%= form_for :sessions,url:{controller: 'sessions',action: 'create'} do |f|%>
+    <%= f.label :name%>
+    <%= f.text_field :name%>
+    <%= f.label :password%>
+    <%= f.password_field :password%>
+    <%= f.submit '登录'%>
+<%end%>

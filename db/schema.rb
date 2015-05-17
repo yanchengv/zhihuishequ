@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150516164853) do
     t.string   "email"
     t.string   "gender"
     t.string   "address"
+    t.string   "remember_token"
     t.date     "birthday"
     t.datetime "created_at"
     t.datetime "updated_at"

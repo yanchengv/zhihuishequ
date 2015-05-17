@@ -1,2 +1,6 @@
-<h1>智慧社区</h1>
-<a href="/users/new">注册</a>
+<h1>智慧社区hone</h1>
+<!--<a href="/users/new">注册</a>-->
+<!--<a href="/sessions/new">登录</a>-->
+<% if !current_user.nil?%>
+    <%= current_user.name%>
+<%end%>

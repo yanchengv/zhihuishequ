@@ -7,9 +7,11 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :gender
       t.string :address
+      t.string :remember_token
       t.date :birthday
 
       t.timestamps
     end
+    add_index :users, :remember_token
   end
 end

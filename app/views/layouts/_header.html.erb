@@ -1,0 +1,28 @@
+<header>
+  <ul class="header">
+    <li>智慧社区</li>
+    <% if !current_user.nil?%>
+
+        <li><a href="/users/setting">设置</a></li>
+        <li><a href="/sessions/destroy">退出</a></li>
+        <%else%>
+        <li><a href="/sessions/new">登录</a></li>
+        <li><a href="/users/new">注册</a></li>
+    <%end%>
+
+
+  </ul>
+</header>
+<style>
+  .header{
+      height:50px;
+      background:#ccc;
+      list-style:none;
+
+  }
+  .header li a{
+      width:80px;
+      float:left;
+      margin:0 5px;
+  }
+</style>
