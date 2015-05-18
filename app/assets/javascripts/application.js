@@ -1,3 +1,4 @@
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -13,4 +14,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require pc/jquery.fullPage.min
+//= require pc/scrolltopcontrol
+// require pc/jquery-ui.min
+// require pc/chat
+// require pc/global
+// require pc/jquery.cookie-1.4.1.min
+// require pc/theme-popover
+// require_all pc
 // require_tree .

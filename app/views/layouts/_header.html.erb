@@ -1,28 +1,39 @@
-<header>
-  <ul class="header">
-    <li>智慧社区</li>
-    <% if !current_user.nil?%>
+<div id="header">
+  <div class="w_wrap2 Center h_min">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png"></a>
+    </div>
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="index.html" class="a1 tabactive">首页</a>
+        </li>
+        <li>
+          <a href="scene.html" class="a1">智慧社区</a>
+        </li>
+        <li>
+          <a href="function.html" class="a1">慧生活</a>
+        </li>
+        <li>
+          <a href="role.html" class="a1">慧办公</a>
+        </li>
+        <li>
+          <a href="mobile.html" class="a1">慧购物</a>
+        </li>
+        <li>
+          <a href="wechat.html" class="a1">关于我们</a>
+        </li>
+        <li>
+          <div class="vline"></div>
+        </li>
+        <li>
+          <a href="socials.html" class="a1">招贤纳士</a>
+        </li>
+        <li>
+          <a href="cloud.html" class="a1">APP下载</a>
+        </li>
 
-        <li><a href="/users/setting">设置</a></li>
-        <li><a href="/sessions/destroy">退出</a></li>
-        <%else%>
-        <li><a href="/sessions/new">登录</a></li>
-        <li><a href="/users/new">注册</a></li>
-    <%end%>
-
-
-  </ul>
-</header>
-<style>
-  .header{
-      height:50px;
-      background:#ccc;
-      list-style:none;
-
-  }
-  .header li a{
-      width:80px;
-      float:left;
-      margin:0 5px;
-  }
-</style>
+      </ul>
+    </div>
+  </div>
+</div>

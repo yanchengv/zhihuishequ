@@ -1,5 +1,6 @@
 #encoding:utf-8
 class HomeController < ApplicationController
+   layout 'pc_home',only:[:index]
     def index
       # 判断手机访问还是pc端
       user_agent_string=request.user_agent

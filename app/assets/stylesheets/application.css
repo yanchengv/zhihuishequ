@@ -11,5 +11,10 @@
  * file per style scope.
  *
  * require_tree .
+ *= require pc/jquery.fullPage
+ *= require pc/global
+ *= require pc/home
+ *require_all pc
+
  *= require_self
  */
