@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount WeixinRailsMiddleware::Engine, at: "/"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -28,6 +29,13 @@ Rails.application.routes.draw do
       end
     end
 
+   resource :weixin do
+     collection do
+
+       get 'home',to:'weixin#home'
+     end
+   end
+   get 'weixin_patient/health_record',to:'weixin#home'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

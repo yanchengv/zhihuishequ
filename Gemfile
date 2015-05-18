@@ -26,7 +26,14 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'bcrypt-ruby', '~> 3.1.2'
 
-gem 'agent_orange', '~> 0.1.6'#判断是否是手机访问
+#判断是否是手机访问
+gem 'agent_orange', '~> 0.1.6'
+
+
+#微信
+gem 'weixin_rails_middleware', '~> 1.3.0'
+# gem 'omniauth'
+# gem 'omniauth-weixin', git: 'https://github.com/sforce100/omniauth-weixin.git'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 # gem 'spring',        group: :development
 

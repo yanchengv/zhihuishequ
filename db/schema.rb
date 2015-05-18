@@ -26,4 +26,6 @@ ActiveRecord::Schema.define(version: 20150516164853) do
     t.datetime "updated_at"
   end
 
+  add_index "users", ["remember_token"], name: "index_users_on_remember_token", using: :btree
+
 end
