@@ -1,154 +1,203 @@
 
-  <script type="text/javascript">
-      $(document).ready(function() {
-          //ie8 特殊处理
-          if(  !document.addEventListener  ){
-              $(".rotatepic>img").hide();
-              $(".roteitem").css("margin-top","0px");
-          }
-          $('#content').fullpage({
-              sectionsColor: ['#7BAABE', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#FAFAFA', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb'],
-              slidesNavigation: true,
-              navigation: true,
-              navigationPosition: 'right',
-              afterLoad :function(anchorLink, index){
-                  if(index === 8){
-                      var vediocontainer = $(".vediocontainer");
-                      if(vediocontainer.find("object").length === 0){
-                          var object = "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0' width='680' height='300'><param name='movie' value='http://www.weaver.com.cn/emobile/Experience/VIDEO/vcastr22.swf?vcastr_file=mobile_SB.flv&IsAutoPlay=0'><param name='quality' value='high'><param name='allowScriptAccess' value='sameDomain'><param name='allowFullScreen' value='True'><param name='wmode' value='opaque'><embed src='http://www.weaver.com.cn/emobile/Experience/VIDEO/vcastr22.swf?vcastr_file=mobile_SB.flv&IsAutoPlay=0' quality='high' pluginspage='http://www.macromedia.com/go/getflashplayer' type='application/x-shockwave-flash' width='680' height='300' allowscriptaccess='sameDomain' allowfullscreen='True'>"+
-                                  "</object>"
-                          vediocontainer.append(object);
-                      }
-                  }
-              }
-          });
+<script type="text/javascript">
+    $(document).ready(function() {
+        //ie8 特殊处理
+        if(  !document.addEventListener  ){
+            $(".rotatepic>img").hide();
+            $(".roteitem").css("margin-top","0px");
+        }
+        $('#content').fullpage({
+            sectionsColor: ['#7BAABE', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#FAFAFA', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb'],
+            slidesNavigation: true,
+            navigation: true,
+            navigationPosition: 'right',
+            afterLoad :function(anchorLink, index){
+                if(index === 8){
+                    var vediocontainer = $(".vediocontainer");
+                    if(vediocontainer.find("object").length === 0){
+                        var object = "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0' width='680' height='300'><param name='movie' value='http://www.weaver.com.cn/emobile/Experience/VIDEO/vcastr22.swf?vcastr_file=mobile_SB.flv&IsAutoPlay=0'><param name='quality' value='high'><param name='allowScriptAccess' value='sameDomain'><param name='allowFullScreen' value='True'><param name='wmode' value='opaque'><embed src='http://www.weaver.com.cn/emobile/Experience/VIDEO/vcastr22.swf?vcastr_file=mobile_SB.flv&IsAutoPlay=0' quality='high' pluginspage='http://www.macromedia.com/go/getflashplayer' type='application/x-shockwave-flash' width='680' height='300' allowscriptaccess='sameDomain' allowfullscreen='True'>"+
+                                "</object>"
+                        vediocontainer.append(object);
+                    }
+                }
+            }
+        });
 
-          //$('.apply, .applybtn').themePopover();
-      });
+        //$('.apply, .applybtn').themePopover();
+    });
+</script>
+
+<!-- <script  type="text/javascript">
+  var _sogou_sa_q = _sogou_sa_q || [];
+  _sogou_sa_q.push(['_sid', '270849-278665']);
+ (function() {
+    var _sogou_sa_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    var _sogou_sa_src=_sogou_sa_protocol+"hermes.sogou.com/sa.js%3Fsid%3D270849-278665";
+    document.write(unescape("%3Cscript src='" + _sogou_sa_src + "' type='text/javascript'%3E%3C/script%3E"));
+    })();
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e0dcf17b65689b3a19e6cee548d08a46";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> -->
 
 
 
 
-  </script>
+<div id="content">
+  <div id="section1" class="section section1">
 
-
-
-
-
-  <div id="content">
-    <div id="section1" class="section section1">
-
-      <div class="intro1">
-        <div class="apply">了解更多</div>
-        <div class="hotline"></div>
+    <div class="intro1">
+      <div class="titBoxlj1">
+        <img src="images/scrren1Box.png" />
       </div>
-
+      <div class="mainTit">
+        <img src="images/screen1BTit.png" />
+      </div>
+      <div class="apply"><a href="#" target="_blank">了解更多</a></div>
+      <div class="hotline"></div>
     </div>
 
+  </div>
 
-    <div id="section2" class="section section2">
-      <div class="intro1">
-        <div class="apply">了解更多</div>
-        <div class="iconBox">
-          <div class="iconitem iconitem1">
-            <p>集成微信和手机APP，web等方式让企业24小时运作</p>
-          </div>
-          <div class="iconitem iconitem2">
-            <p>让组织变得更加扁平，更加柔性，让员工成为中心</p>
-          </div>
-          <div class="iconitem iconitem3">
-            <p>满足客户开箱即用，快速部署，随时扩容的云架构设计</p>
-          </div>
-          <div class="iconitem iconitem4">
-            <p>前台轻量化、后台全面引擎化、灵活适用组织需求变化</p>
-          </div>
-        </div>
-        <div class="hotline"></div>
+
+  <div id="section2" class="section section2">
+    <div class="intro1 intro2">
+      <div class="titBoxlj1">
+        <img src="images/screen2Box.png" />
       </div>
-    </div>
+      <div class="mainTit">
+        <img src="images/screen2BTit.png" />
 
-
-    <div id="section3" class="section section3">
-      <div class="intro1">
-        <div class="apply">了解更多</div>
-        <div class="iconBox">
-          <div class="iconitem iconitem1">
-            <p>集成微信和手机APP，web等方式让企业24小时运作</p>
-          </div>
-          <div class="iconitem iconitem2">
-            <p>让组织变得更加扁平，更加柔性，让员工成为中心</p>
-          </div>
-          <div class="iconitem iconitem3">
-            <p>满足客户开箱即用，快速部署，随时扩容的云架构设计</p>
-          </div>
-          <div class="iconitem iconitem4">
-            <p>前台轻量化、后台全面引擎化、灵活适用组织需求变化</p>
-          </div>
-        </div>
-        <div class="hotline"></div>
       </div>
-
-    </div>
-
-
-    <div id="section4" class="section section4">
-      <div class="intro1">
-        <div class="apply">了解更多</div>
-        <div class="iconBox">
-          <div class="iconitem iconitem1">
-            <p>集成微信和手机APP，web等方式让企业24小时运作</p>
-          </div>
-          <div class="iconitem iconitem2">
-            <p>让组织变得更加扁平，更加柔性，让员工成为中心</p>
-          </div>
-          <div class="iconitem iconitem3">
-            <p>满足客户开箱即用，快速部署，随时扩容的云架构设计</p>
-          </div>
-          <div class="iconitem iconitem4">
-            <p>前台轻量化、后台全面引擎化、灵活适用组织需求变化</p>
-          </div>
+      <div class="apply"><a href="#" target="_blank">了解更多</a></div>
+      <div class="iconBox">
+        <div class="iconitem iconitem1">
+          <p>集成微信和手机APP，web等方式让企业24小时运作</p>
         </div>
-        <div class="hotline"></div>
-      </div>
-    </div>
-    <div id="section5" class="section section5">
-      <div class="basecontainer">
-        <div class="s7content">
-          <div class="iconwarp">
-            <div class="iconitem iconitem1">
-
-            </div>
-            <div class="iconitem iconitem2">
-
-            </div>
-            <div class="iconitem iconitem3">
-
-            </div>
-          </div>
+        <div class="iconitem iconitem2">
+          <p>让组织变得更加扁平，更加柔性，让员工成为中心</p>
+        </div>
+        <div class="iconitem iconitem3">
+          <p>满足客户开箱即用，快速部署，随时扩容的云架构设计</p>
+        </div>
+        <div class="iconitem iconitem4">
+          <p>前台轻量化、后台全面引擎化、灵活适用组织需求变化</p>
         </div>
       </div>
-
-      <!--footer-->
-      <div id="footer">
-        <div class="w960">
-          <p class="links">
-            <a href="#" target="_blank">首页</a>
-            <a href="#" target="_blank">智慧社区</a>
-            <a href="#" target="_blank">慧生活</a>
-            <a href="#" target="_blank">慧办公</a>
-            <a href="#" target="_blank">慧购物</a>
-            <a href="#" target="_blank">关于我们</a>
-            <a href="#" target="_blank">招贤纳士</a>
-            <a href="#" target="_blank">APP下载</a>
-          </p>
-          <p class="address">
-            <span>版权所有：北京市彩立方科技有限责任公司</span>&nbsp;&nbsp;&nbsp;&nbsp;
-            ICP备案号：京ICP备05068367号
-          </p>
-        </div>
-      </div>
-
+      <div class="hotline"></div>
     </div>
   </div>
+
+
+  <div id="section3" class="section section3">
+    <div class="intro1 intro2">
+      <div class="titBoxlj1">
+        <img src="images/screen3Box.png" />
+      </div>
+      <div class="mainTit">
+        <img src="images/screen3BTit.png" />
+
+      </div>
+      <div class="apply"><a href="#" target="_blank">了解更多</a></div>
+      <div class="iconBox">
+        <div class="iconitem iconitem1">
+          <p>集成微信和手机APP，web等方式让企业24小时运作</p>
+        </div>
+        <div class="iconitem iconitem2">
+          <p>让组织变得更加扁平，更加柔性，让员工成为中心</p>
+        </div>
+        <div class="iconitem iconitem3">
+          <p>满足客户开箱即用，快速部署，随时扩容的云架构设计</p>
+        </div>
+        <div class="iconitem iconitem4">
+          <p>前台轻量化、后台全面引擎化、灵活适用组织需求变化</p>
+        </div>
+      </div>
+      <div class="hotline"></div>
+    </div>
+
+  </div>
+
+
+  <div id="section4" class="section section4">
+    <div class="intro1 intro2">
+      <div class="titBoxlj1">
+        <img src="images/screen4Box.png" />
+      </div>
+      <div class="mainTit">
+        <img src="images/screen4BTit.png" />
+
+      </div>
+      <div class="apply"><a href="#" target="_blank">了解更多</a></div>
+      <div class="iconBox">
+        <div class="iconitem iconitem1">
+          <p>集成微信和手机APP，web等方式让企业24小时运作</p>
+        </div>
+        <div class="iconitem iconitem2">
+          <p>让组织变得更加扁平，更加柔性，让员工成为中心</p>
+        </div>
+        <div class="iconitem iconitem3">
+          <p>满足客户开箱即用，快速部署，随时扩容的云架构设计</p>
+        </div>
+        <div class="iconitem iconitem4">
+          <p>前台轻量化、后台全面引擎化、灵活适用组织需求变化</p>
+        </div>
+      </div>
+      <div class="hotline"></div>
+    </div>
+  </div>
+  <div id="section5" class="section section5">
+    <div class="basecontainer">
+      <div class="s7content">
+        <div class="titBoxlj1">
+          <img src="images/screen5Box.png" />
+        </div>
+        <div class="mainTit">
+          <img src="images/screen5BTit.png" />
+
+        </div>
+        <div class="iconwarp">
+
+          <div class="iconitem iconitem1">
+
+          </div>
+          <div class="iconitem iconitem2">
+
+          </div>
+          <div class="iconitem iconitem3">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="w960">
+        <p class="links">
+          <a href="#" target="_blank">首页</a>
+          <a href="#" target="_blank">智慧社区</a>
+          <a href="#" target="_blank">慧生活</a>
+          <a href="#" target="_blank">慧办公</a>
+          <a href="#" target="_blank">慧购物</a>
+          <a href="#" target="_blank">关于我们</a>
+          <a href="#" target="_blank">招贤纳士</a>
+          <a href="#" target="_blank">APP下载</a>
+        </p>
+        <p class="address">
+          <span>版权所有：云南彩立方数据科技有限公司</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          ICP备案号：京ICP备05068367号
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 

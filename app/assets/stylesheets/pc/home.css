@@ -17,6 +17,12 @@
     opacity: 0;
     border-bottom: 2px solid #2d9fee;
 	background:#51aded;
+	
+}
+.apply a{
+	text-decoration:none;
+	color:#fff;
+	font-size:22px;
 }
 .section.active   .apply {
     opacity: 1;
@@ -142,7 +148,7 @@
 
 #section5 .iconwarp {
     width: 635px;
-    margin: -10px auto 0;
+    margin: 20px auto 0;
 }
 
 #section5 .iconitem {
@@ -254,7 +260,7 @@
 
 
 .section2 .apply,.section3 .apply,.section4 .apply{
-	margin-top:-76px;
+	margin-top:-26px;
 }
 .section2 .apply{
 	background:#75c06f;	
@@ -443,4 +449,154 @@
 	color:#a0ecff;
 	font-size:12px;
 	padding-left:44px;
+}
+/* 0519添加 */
+.titBoxlj1,.mainTit{
+	position:absolute;
+	left:50%;
+	top:50%;	
+}
+.section1 .titBoxlj1{
+	width:509px;
+	height:79px;
+	margin:-600px 0 0 -255px;
+	-webkit-transition:all .9s linear .7s;	
+	-mox-transition:all .9s linear .7s;	
+	-ms-transition:all .9s linear .7s;	
+	-o-transition:all .9s linear .71s;
+	transition:all .9s linear .7s;	
+	opacity:0;
+	filter:alpha(opacity = 0);	
+}
+.section1 .mainTit{
+	width:509px;
+	height:122px;
+	margin:-300px 0 0 -255px;
+	-webkit-transition:all .6s linear .5s;	
+	-mox-transition:all .6s linear .5s;	
+	-ms-transition:all .6s linear .5s;	
+	-o-transition:all .6s linear .5s;
+	transition:all .6s linear .5ss;	
+	opacity:0;
+	filter:alpha(opacity = 0);
+}
+.section2 .titBoxlj1{
+	width:573px;
+	height:79px;
+	margin:-600px 0 0 -286px;
+	-webkit-transition:all .9s linear .7s;	
+	-mox-transition:all .9s linear .7s;	
+	-ms-transition:all .9s linear .7s;	
+	-o-transition:all .9s linear .71s;
+	transition:all .9s linear .7s;
+	opacity:0;
+	filter:alpha(opacity = 0);
+}
+.section2 .mainTit{
+	width:577px;
+	height:61px;
+	margin:-300px 0 0 -255px;
+	-webkit-transition:all .6s linear .5s;	
+	-mox-transition:all .6s linear .5s;	
+	-ms-transition:all .6s linear .5s;	
+	-o-transition:all .6s linear .5s;
+	transition:all .6s linear .5s;	
+	opacity:0;
+	filter:alpha(opacity = 0);
+}
+
+.section3 .titBoxlj1{
+	width:573px;
+	height:79px;
+	margin:-600px 0 0 -286px;
+	-webkit-transition:all .9s linear .7s;	
+	-mox-transition:all .9s linear .7s;	
+	-ms-transition:all .9s linear .7s;	
+	-o-transition:all .9s linear .71s;
+	transition:all .9s linear .7s;
+	opacity:0;
+	filter:alpha(opacity = 0);
+}
+.section3 .mainTit{
+	width:575px;
+	height:60px;
+	margin:-300px 0 0 -255px;
+	-webkit-transition:all .6s linear .5s;	
+	-mox-transition:all .6s linear .5s;	
+	-ms-transition:all .6s linear .5s;	
+	-o-transition:all .6s linear .5s;
+	transition:all .6s linear .5s;	
+	opacity:0;
+	filter:alpha(opacity = 0);
+}
+.section4 .titBoxlj1{
+	width:664px;
+	height:79px;
+	margin:-600px 0 0 -332px;
+	-webkit-transition:all .9s linear .7s;	
+	-mox-transition:all .9s linear .7s;	
+	-ms-transition:all .9s linear .7s;	
+	-o-transition:all .9s linear .71s;
+	transition:all .9s linear .7s;
+	opacity:0;
+	filter:alpha(opacity = 0);
+}
+.section4 .mainTit{
+	width:669px;
+	height:61px;
+	margin:-300px 0 0 -335px;
+	-webkit-transition:all .6s linear .5s;	
+	-mox-transition:all .6s linear .5s;	
+	-ms-transition:all .6s linear .5s;	
+	-o-transition:all .6s linear .5s;
+	transition:all .6s linear .5s;	
+	opacity:0;
+	filter:alpha(opacity = 0);
+}
+.s7content .titBoxlj1{
+	width:462px;
+	height:79px;
+	margin:-600px 0 0 -231px;
+	-webkit-transition:all .9s linear 1.2s;	
+	-mox-transition:all .9s linear 1.2s;	
+	-ms-transition:all .9s linear 1.2s;	
+	-o-transition:all .9s linear 1.2s;
+	transition:all .9s linear 1.2s;
+	opacity:0;
+	filter:alpha(opacity = 0);
+}
+.s7content .mainTit{
+	width:601px;
+	height:79px;
+	margin:300px 0 0 -300px;
+	-webkit-transition:all .6s linear 1.5s;	
+	-mox-transition:all .6s linear 1.5s;	
+	-ms-transition:all .6s linear 1.5s;	
+	-o-transition:all .6s linear 1.5s;
+	transition:all .6s linear 1.5s;	
+	opacity:0;
+	filter:alpha(opacity = 0);
+}
+
+.active .titBoxlj1{
+	margin-top:-180px;
+	opacity:1;
+	filter:alpha(opacity = 100);
+}
+.active .mainTit{
+	margin-top:-80px;
+	opacity:1;
+	filter:alpha(opacity = 100);
+}
+.active .intro2 .titBoxlj1{
+	margin-top:-220px;
+}
+.active .intro2 .mainTit{
+	margin-top:-120px;
+}
+.active .s7content .titBoxlj1{
+	margin-top:-180px;
+}
+.active .s7content .mainTit{
+	margin-top:120px;
 }

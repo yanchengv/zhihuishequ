@@ -33,7 +33,7 @@
   top: -25px;
   width: 52px;
   height: 52px;
-  background-image: url(../images/popover-close.png);
+  background-image: url(/images/popover-close.png);
   cursor: pointer;
 }
 

@@ -5,6 +5,17 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'home#index'
+
+  resource :home do
+    collection do
+      get 'huishequ',to:'home#huishequ'
+      get 'huishenghuo',to:'home#huishenghuo'
+      get 'huibangong',to:'home#huibangong'
+      get 'huigouwu',to:'home#huigouwu'
+      get 'about_us',to:'home#about_us'
+      get 'join_us',to:'home#join_us'
+    end
+  end
   resource :users do
     collection do
      get 'new',to:'users#new'
