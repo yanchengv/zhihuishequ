@@ -1,0 +1,34 @@
+<table style="position: center">
+
+
+
+  <form accept-charset="UTF-8" action="/events/create" method="post">
+
+    <tr>
+      <td>时间</td>
+      <td><input name="event[event_date]" placeholder="时间" type="month"></td>
+    </tr>
+
+    <tr>
+      <td>序列号</td>
+      <td> <input name="event[position]" placeholder="序列号" type="text"></td>
+    </tr>
+
+    <tr>
+      <td>内容</td>
+      <td> <textarea rows="5" cols="50" name="event[content]"></textarea></td>
+    </tr>
+
+
+       <tr>
+         <td>提交</td>
+         <td> <input name="commit" style="" type="submit" value="提交"></td>
+       </tr>
+
+  </form>
+
+
+</table>
+<div><%= flash[:flag]%></div>
+
+

@@ -1,5 +1,6 @@
 #encoding: utf-8
 class SessionsController < ApplicationController
+  skip_before_filter :verify_authenticity_token,only: :admin_login
     def new
 
     end
@@ -25,4 +26,22 @@ class SessionsController < ApplicationController
        redirect_to root_path
     end
 
+
+
+#   后台登陆
+    def admin_login
+      name=params[:sessions][:name]
+      password=params[:sessions][:password]
+      user = User.where(name:name,is_admin:1).first
+
+      if user && user.authenticate(password)
+        p 888888888
+        #登录成功
+        sign_in(user)
+        redirect_to controller: :admins,action: :home
+      else
+        flash[:error] = '用户名或者密码错误' # Not quite right!
+        redirect_to action: :login ,controller: :admins
+      end
+    end
 end

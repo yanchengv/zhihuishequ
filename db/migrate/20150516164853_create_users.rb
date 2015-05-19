@@ -7,6 +7,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :gender
       t.string :address
+      t.boolean :is_admin,null: false, :default =>false
       t.string :remember_token
       t.date :birthday
 

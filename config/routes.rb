@@ -14,18 +14,33 @@ Rails.application.routes.draw do
     end
   end
 
+    resource :admins do
+      collection do
+         get 'login',to:'admins#login'
+         get 'home',to:'admins#home'
+      end
+    end
+
    resources :sessions do
      collection do
        get 'new',to:'sessions#new'
-       post 'create',to:'session#create'
+       post 'create',to:'sessions#create'
+       post 'admin_login',to:'sessions#admin_login'
        match '/destroy', to: 'sessions#destroy', via: [:delete,:get]
+     end
+   end
+   resource :events do
+     collection do
+       get 'show',to:'events#show'
+       get 'new',to:'events#new'
+       post 'create',to:'events#create'
+
      end
    end
 
     resource :mobile_home  do
       collection do
         get 'home',to:'mobile_home#home'
-
       end
     end
 
@@ -35,6 +50,7 @@ Rails.application.routes.draw do
        get 'home',to:'weixin#home'
      end
    end
+
    get 'weixin_patient/health_record',to:'weixin#home'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

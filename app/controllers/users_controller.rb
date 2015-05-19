@@ -63,6 +63,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.permit(:id,:name,:password,:phone,:email,:gender,:address,:birthday,:remember_token)
+    params.permit(:id,:name,:password,:phone,:email,:gender,:address,:birthday,:is_admin,:remember_token)
   end
 end

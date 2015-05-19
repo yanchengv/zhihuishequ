@@ -1,0 +1,132 @@
+
+
+ <header>
+<div class="logo"><img src="images/logo.png"/></div>
+<ul class="m_back_nav">
+
+  <% if !current_user.nil? &&current_user.is_admin==true%>
+      <li><a href="/events/show">大事记</a></li>
+      <li><a href="/users/setting">设置</a></li>
+      <li><a href="/sessions/destroy">退出</a></li>
+  <%else%>
+      <font color="#f0f8ff">欢迎登录后台管理系统</font>
+      <!--<li><a href="/users/new">注册</a></li>-->
+      <!--<li><a href="/sessions/new">登录</a></li>-->
+
+  <%end%>
+
+</ul>
+ </header>
+
+
+<% if current_user.nil? %>
+<div class="login-box">
+
+  <form accept-charset="UTF-8" action="/sessions/admin_login" id="sess_form" method="post">
+
+    <input class="form-control top" id="us" name="sessions[name]" placeholder="用户名/邮箱" type="text">
+    <input class="form-control bottom" id="pa" name="sessions[password]" placeholder="密码" type="password">
+    <input class="btn-primary btn" name="commit" style="" type="submit" value="登 录">
+  </form>
+  <div><font color="#ff0e2c"><%= flash[:error]%></font></div>
+
+  <div class="clearfix"></div>
+</div>
+
+ <%end%>
+
+
+
+<style>
+    ul,li{
+        list-style:none;
+    }
+    div,input,form,ul,li,body{margin:0;padding:0;}
+    header{
+        background:#373737;
+        padding:0 15px;
+        height:50px;
+        border-bottom:2px solid #333;}
+
+    .logo
+    {float:left;width:123px;height:41px;margin-top:5px;display:inline-block;margin-right:15px;}
+    .m_back_nav{
+        float:left;
+
+        line-height:50px;
+        font-family:"Microsoft YaHei",Arial;
+
+
+    }
+    .m_back_nav li{
+        float:left;
+        padding:0 10px;
+    }
+    .m_back_nav li:hover{
+        border-bottom:2px solid #f47676}
+    .m_back_nav li a{
+        cursor:pointer;
+        font-size:16px;
+        float:left;
+        color:#fff;
+    }
+    .login-box {
+
+        width:80%;
+        font-family:"Microsoft YaHei",Arial;
+        background: #fafafa;
+        border:1px solid #dfdfdf;
+        border-radius: 10px;
+        box-shadow: 0 0px 2px #ddd;
+        padding: 15px;
+        margin: 25px auto 0 auto;
+    }
+    .login-box .form-control {
+        font-size: 14px;
+        padding: 10px 0px !important;
+        width: 100%;
+        height: auto;
+        border:1px solid #ccc;
+
+    }
+    .login-box .form-control {
+        font-size: 14px;
+        padding: 10px 8px;
+        width: 100%;
+        height: auto;
+    }
+    .btn-primary {
+        color: white;
+        background-color: #428bca;
+        border-color: #357ebd;
+        margin-top:10px;
+    }
+    .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    .top{
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+    }
+    .bottom{
+        border-bottom-left-radius:5px;
+        border-bottom-right-radius:5px;
+    }
+</style>
