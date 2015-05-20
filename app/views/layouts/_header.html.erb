@@ -2,12 +2,12 @@
 <div id="header">
   <div class="w_wrap2 Center h_min">
     <div class="logo">
-      <a href="/"><img src="/images/logo.png"></a>
+      <a href="javascript:void(0);" onclick="reload()"><img src="/images/logo.png"></a>
     </div>
     <div class="nav">
       <ul>
         <li>
-          <a href="/" class="a1 ahome tabactive">首页</a>
+          <a href="javascript:void(0);" onclick="reload()" class="a1 ahome tabactive">首页</a>
         </li>
         <li>
           <a href="/home/huishequ" class="a1 asq">智慧社区</a>
@@ -38,3 +38,9 @@
     </div>
   </div>
 </div>
+
+<script>
+    function reload(){
+        window.location.href="/"
+    }
+</script>
