@@ -21,6 +21,7 @@ img{display: inline;_display: block;}
     background:#fff;
     border-bottom: 2px solid #dbdcde;
     border-top: 1px solid #dbdcde;
+    margin-top:-70px;
 }
 
 #header ul,#header li,#header ol {

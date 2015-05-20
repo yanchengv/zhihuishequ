@@ -1,0 +1,50 @@
+.zhaoxiannashi_bg{
+    width:100%;
+    height:100%;
+    background: url(/images/hbg_w960bg.jpg);
+}
+.zhaoxiannashi_banner{
+    width: 100%;
+    height: 355px;
+    background: url(/images/zxns_banner.jpg) no-repeat top center;
+    border-bottom: 1px solid #dbdcde;
+}
+.first_titile{
+    height:	34px;
+    padding:25px 0;
+    width:100%;
+    border-bottom:1px solid #d0d0d0;
+    margin-bottom:50px;
+    font-size: 34px;
+    color: #5e5e5e;
+    margin-right: 18px;
+    font-family: "microsoft yahei";
+}
+.zhaoxiannashi_content{
+    width:960px;
+    margin:0 auto 100px auto;
+}
+.zhaoxiannashi_info{
+    width:100%;
+    padding:0 40px;
+    font-size:18px;
+    font-family: "microsoft yahei";
+}
+.zhaoxiannashi_info h3{
+    font-size:18px;
+    font-weight:bold;
+    font-family: "microsoft yahei";
+    color:#0082c0;
+    margin:20px 0;
+
+}
+.zhaoxiannashi_info p{
+    font-size:18px;
+    font-family: "microsoft yahei";
+    line-height:34px;
+    color:#000;
+
+}
+.margin_t_100{
+    margin-top:100px;
+}
