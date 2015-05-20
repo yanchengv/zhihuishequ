@@ -14,7 +14,7 @@
  *= require pc/jquery.fullPage
  *= require pc/global
  *= require pc/home
-
+  *= require pc/huibangong
  *require_all pc
 
  *= require_self

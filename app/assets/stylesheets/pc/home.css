@@ -75,7 +75,7 @@
 
 .section.active  .imgwraper{
     position: absolute;
-    overflow: hidden;
+    /*overflow: hidden;*/
     -webkit-transition: all .6s .4s ease-out;
     -o-transition: all .6s .4s ease-out;
     transition: all .6s .4s ease-out;
