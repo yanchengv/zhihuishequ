@@ -1,0 +1,51 @@
+.huigouwu_banner{
+    width: 100%;
+    height: 355px;
+    background: url(/images/huigouwu_banner.jpg) no-repeat top center;
+    border-bottom: 1px solid #dbdcde;
+}
+
+.huigouwu_content{
+    width:960px;
+    height:265px;
+    margin:60px auto;
+}
+
+
+.huigouwu_content .text{
+    width:415px;
+    padding:30px;
+    float:left;
+    height:205px;
+    line-height:24px;
+}
+.huigouwu_content .text h2{
+    margin:10px 0 20px 0;
+    font-size:24px;
+    font-family: "Microsoft YaHei",Arial;
+}
+.huigouwu_content .text p{
+    font-size:16px;
+    font-family: "Microsoft YaHei",Arial;
+}
+.huigouwu_content .text .left h2{
+    color:#fff;
+}
+.huigouwu_content .left{
+    background:#9e79e8;
+    color:#fff;
+    margin-right:5px;
+}
+.huigouwu_content .text .right h2{
+    color:#940054
+}
+.huigouwu_content .right{
+    background:#ffbbdd;
+    color:#940054;
+    margin-left:5px;
+    display:inline-block;
+}
+
+
+
+
