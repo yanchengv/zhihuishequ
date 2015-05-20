@@ -31,12 +31,12 @@ img{display: inline;_display: block;}
     float:left;
 }
 
-#header a.tabactive {
-    color:#FFF!important;
-    border-bottom:2px solid #eb322d!important;
-    background:#f0615b;
+/*#header a.tabactive {*/
+    /*color:#FFF;*/
+    /*border-bottom:2px solid #eb322d;*/
+    /*background:#f0615b;*/
 
-}
+/*}*/
 
 #header .logo {
     width:128px;
@@ -60,15 +60,19 @@ img{display: inline;_display: block;}
     text-decoration:none;
     color:#333333;
     padding:0px 20px;
+    margin:0 3px;
     height:72px;
     line-height:72px;
     display:block;
     font-size:14px;
 }
 
-#header .a1:hover, #header .a1:focus {
+#header .a1:hover
+/*#header .a1:focus*/
+{
     text-decoration:none;
-    color:#2755a9;
+    color:#fff !important;
+    background:#f0615b;
     border-bottom:2px solid #eb322d;
 }
 
