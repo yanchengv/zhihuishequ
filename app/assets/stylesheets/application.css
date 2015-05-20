@@ -16,6 +16,7 @@
  *= require pc/home
  *= require pc/huibangong
  *= require pc/huigouwu
+  *= require pc/zhaoxiannashi
  *require_all pc
 
  *= require_self
