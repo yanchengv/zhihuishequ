@@ -15,13 +15,13 @@ img{display: inline;_display: block;}
 /* header部分 结束 */
 #header {
     position: fixed;
+    top:0px;
     z-index: 9999;
     width:100%;
     height:70px;
     background:#fff;
     border-bottom: 2px solid #dbdcde;
     border-top: 1px solid #dbdcde;
-    margin-top:-70px;
 }
 
 #header ul,#header li,#header ol {
