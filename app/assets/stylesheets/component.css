@@ -164,3 +164,6 @@
 		left: 190px;
 	}
 }
+.clear{
+    clear:both;
+}
