@@ -39,7 +39,7 @@
 .hbg_w960 h3 span{
     font-size:18px;
     color:#434343;
-    font-family:sinsun;
+    font-family:"microsoft yahei";
     font-weight:300;
 }
 .hbg_moulds{
@@ -71,7 +71,9 @@
     color:#8f8f8f;
     line-height:28px;
     text-align:center;
+    font-family:"Microsoft YaHei";
 }
+
 .hbg_unit1{
     background:url(/images/hbg_MUnit1.jpg)  no-repeat;
 }
