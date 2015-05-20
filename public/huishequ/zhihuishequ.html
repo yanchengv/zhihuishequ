@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>智慧社区</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/scrolltopcontrol.js"></script>
+    <link rel="stylesheet" href="css/zhihuishequ.css">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //ie8 特殊处理
+            if(  !document.addEventListener  ){
+                $(".rotatepic>img").hide();
+                $(".roteitem").css("margin-top","0px");
+            }
+            $('#content').fullpage({
+                sectionsColor: ['#7BAABE', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#FAFAFA', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb'],
+                slidesNavigation: true,
+                navigation: true,
+                navigationPosition: 'right',
+                afterLoad :function(anchorLink, index){
+                    if(index === 8){
+                        var vediocontainer = $(".vediocontainer");
+                        if(vediocontainer.find("object").length === 0){
+                            var object = "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0' width='680' height='300'><param name='movie' value='http://www.weaver.com.cn/emobile/Experience/VIDEO/vcastr22.swf?vcastr_file=mobile_SB.flv&IsAutoPlay=0'><param name='quality' value='high'><param name='allowScriptAccess' value='sameDomain'><param name='allowFullScreen' value='True'><param name='wmode' value='opaque'><embed src='http://www.weaver.com.cn/emobile/Experience/VIDEO/vcastr22.swf?vcastr_file=mobile_SB.flv&IsAutoPlay=0' quality='high' pluginspage='http://www.macromedia.com/go/getflashplayer' type='application/x-shockwave-flash' width='680' height='300' allowscriptaccess='sameDomain' allowfullscreen='True'>"+
+                                    "</object>"
+                            vediocontainer.append(object);
+                        }
+                    }
+                }
+            });
+
+            //$('.apply, .applybtn').themePopover();
+        });
+    </script>
+</head>
+
+<body>
+
+<!-- <script  type="text/javascript">
+  var _sogou_sa_q = _sogou_sa_q || [];
+  _sogou_sa_q.push(['_sid', '270849-278665']);
+ (function() {
+    var _sogou_sa_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    var _sogou_sa_src=_sogou_sa_protocol+"hermes.sogou.com/sa.js%3Fsid%3D270849-278665";
+    document.write(unescape("%3Cscript src='" + _sogou_sa_src + "' type='text/javascript'%3E%3C/script%3E"));
+    })();
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e0dcf17b65689b3a19e6cee548d08a46";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> -->
+
+<!-- heeader -->
+<!-- heeader -->
+<div id="header">
+    <div class="w_wrap2 Center h_min">
+        <div class="logo">
+            <a href="javascript:void(0);" onclick="reload()"><img src="/images/logo.png"></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" onclick="reload()" class="a1 ahome tabactive">首页</a>
+                </li>
+                <li>
+                    <a href="/huishequ/zhihuishequ.html" class="a1 asq">智慧社区</a>
+                </li>
+                <li>
+                    <a href="/home/huishenghuo" class="a1 ash">慧生活</a>
+                </li>
+                <li>
+                    <a href="/home/huibangong" class="a1 abg">慧办公</a>
+                </li>
+                <li>
+                    <a href="/home/huigouwu" class="a1 agw">慧购物</a>
+                </li>
+                <li>
+                    <a href="/home/about_us" class="a1 aus">关于我们</a>
+                </li>
+                <li>
+                    <div class="vline"></div>
+                </li>
+                <li>
+                    <a href="/home/join_us" class="a1 ans">招贤纳士</a>
+                </li>
+                <li>
+                    <a href="#" class="a1">APP下载</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    function reload(){
+        window.location.href="/"
+    }
+</script>
+
+
+
+
+
+
+<div id="content">
+    <div id="section1" class="section section1">
+            <div class="intro1">
+            	<div class="zoneW960">
+                    <div class="zoneTit zoneTit1">
+                        <img src="images/zoneB1Tit1.png" width="311" height="42" />
+                    </div>
+                    <div class="zoneTit zoneTit2">
+                        <img src="images/zoneB1Tit2.png" width="458" height="43" />
+                    </div>
+                    <div class="zoneSubTit zoneSubTit1">
+                        <img src="images/zoneB1SubTit1.png" width="344" height="68"/ >
+                    </div>
+                    <div class="zoneSubTit zoneSubTit2">
+                        <img src="images/zoneB1SubTit2.png" width="393" height="101"/ >
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+    <div id="section2" class="section section2">
+		<div class="intro1 intro2"> 
+        	<div class="zoneW960">
+            	<div class="zone_Ban2">
+                    <p class="pTit">
+                        房地产行业已经由大规模建设房产的爆炸式发展期进入到了消化房产储备量的经营期。在这样的趋势下各个房地产巨头都在寻求转型，而智慧社区运营能够帮助地产商从过去的一次建设从而实现单次营销的单线旧模式中走出来，帮助他们转型成为一次建设单次销售实现百年盈利的生态圈式模式。
+                    </p>
+                    <div class="zone_solution">
+                        <h3><img src="images/zoneB2Tit1.png" width="190" height="23" /></h3>
+                        <div class="zone_l">
+                            <div class="zone_lLinks">
+                                <div class="zone_upLinks">
+                                    <a class="zone_link1" href="#" target="_blank">一个数据中心</a>
+                                    <a class="zone_link2" href="#" target="_blank">两张网</a>
+                                </div>
+                                <div class="zone_midLinks">
+                                    <a class="zone_link3" href="#" target="_blank">三种业态 真正实现三网合一</a>                            
+                                </div>
+                                <div class="zone_downLinks">
+                                    <a class="zone_link4" href="#" target="_blank">四屏互动</a>
+                                    <a class="zone_link5" href="#" target="_blank">五种业务</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="zone_r">
+                            <p><span class="blue">（一个数据中心）</span>与施耐德电气携手共同打造微模块数据中心，建设等级T3+，建设面积1030平米，采用当今世界上最先进的微模块技术，热池技术，模块化UPS及水平送风空调，采用DCIM进行管理，代表当今数据中心建设最高水平。</p>
+                            <p><span class="blue">（二张网）</span>与华为公司携手共同打造智慧社区全光网络，打造成功中国首个三网合一的智慧社区。</p>
+                            <p><span class="blue">（三种业态）</span>以业主的真实需求为依据，以马斯诺博士的需求金字塔为方法论，打造中国首个慧生活，慧办公，慧购物三种业态合一的智慧社区。</p>
+                            <p><span class="blue">（四屏互动）</span>通过全光网络与无线WiFi覆盖等技术手段，打通手机屏、PAD屏、电视屏，可视对讲屏，与业主实现真正意义的即时互动。</p>
+                            <p><span class="blue">（五种业务）</span>通过智慧运营实现可持续性的盈利。</p>
+                        </div>
+                    </div>
+                </div>
+            
+         
+          </div>
+          <div id="footer">
+        	  <div class="w960">
+          	<p class="links">
+            	<a href="#" target="_blank">首页</a>
+                <a href="#" target="_blank">智慧社区</a>
+                <a href="#" target="_blank">慧生活</a>
+                <a href="#" target="_blank">慧办公</a>
+                <a href="#" target="_blank">慧购物</a>
+                <a href="#" target="_blank">关于我们</a>
+                <a href="#" target="_blank">招贤纳士</a>
+                <a href="#" target="_blank">APP下载</a>
+            </p>
+            <p class="address">
+            	<span>版权所有：云南彩立方数据科技有限公司</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                ICP备案号：京ICP备05068367号
+            </p>
+          </div>
+          </div>
+    </div>
+
+
+</div>
+
+</div>
+<!-- <script src="js/global.js"></script> -->
+<!--  <script src="js/jquery-ui.min.js"></script> -->
+ <!--  <script src="js/jquery.cookie-1.4.1.min.js"></script> -->
+<!--   <script src="js/chat.js"></script> -->
+</body>
+</html>
