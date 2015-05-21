@@ -58,7 +58,7 @@
 
 .section.active .applybtn{
     opacity: 1;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .applybtn:hover {
@@ -149,23 +149,17 @@
 }
 
 
-#section5 .iconwarp {
+.section5 .iconwarp {
+    position:absolute;
+    left:50%;
+    top:50%;
     width: 635px;
-    margin: 20px auto 0;
-}
-
-#section5 .iconitem {
-    float: left;
-    width: 151px;
-    height: 151px;
-    text-align: center;
-    margin: 30px;
-    position: relative;
-    top: -300px;
+    margin:-500px 0 0 -316px;
     opacity: 0;
-    -webkit-transition-property: opacity,top;
-    -o-transition-property: opacity,top;
-    transition-property: opacity,top;
+    filter:alpha(opacity=0);
+    -webkit-transition-property: all;
+    -o-transition-property: allp;
+    transition-property: all;
     -webkit-transition-delay: 0.8s;
     -o-transition-delay: 0.8s;
     transition-delay: 0.8s;
@@ -175,6 +169,20 @@
     -webkit-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
+}
+.active .iconwarp{
+    margin-top:10px;
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+#section5 .iconitem {
+    float: left;
+    width: 151px;
+    height: 151px;
+    text-align: center;
+    margin: 30px;
+    /*  position: relative;
+     top: -300px; */
     border-radius:75px;
 }
 
@@ -203,29 +211,15 @@
 
 #section5 .iconitem1{
     background:url(/images/sec5Icon1.png) no-repeat;
-    -webkit-transition-delay: 1.1s;
-    -o-transition-delay: 1.1s;
-    transition-delay: 1.1s;
 }
 #section5 .iconitem2 {
     background:url(/images/sec5Icon2.png) no-repeat;
-    -webkit-transition-delay: 1.1s;
-    -o-transition-delay: 1.1s;
-    transition-delay: 1.1s;
 }
 
 #section5 .iconitem3 {
     background:url(/images/sec5Icon3.png) no-repeat;
-    -webkit-transition-delay: 1.3s;
-    -o-transition-delay: 1.3s;
-    transition-delay: 1.3s;
 }
 
-#section5 .iconitem4 {
-    -webkit-transition-delay: 1.5s;
-    -o-transition-delay: 1.5s;
-    transition-delay: 1.5s;
-}
 
 #footer{
     position: absolute;
@@ -332,7 +326,7 @@
 .active .iconBox .iconitem{
     opacity:100;
     filter:alpha(opacity=100);
-    top:0;
+    top:10px;
 }
 .section2 .iconBox .iconitem1{
     background:url(/images/sec2Icon1.png) no-repeat;
@@ -464,7 +458,7 @@
     height:79px;
     margin:-600px 0 0 -255px;
     -webkit-transition:all .9s linear .7s;
-    -mox-transition:all .9s linear .7s;
+    -moz-transition:all .9s linear .7s;
     -ms-transition:all .9s linear .7s;
     -o-transition:all .9s linear .71s;
     transition:all .9s linear .7s;
@@ -476,7 +470,7 @@
     height:122px;
     margin:-300px 0 0 -255px;
     -webkit-transition:all .6s linear .5s;
-    -mox-transition:all .6s linear .5s;
+    -moz-transition:all .6s linear .5s;
     -ms-transition:all .6s linear .5s;
     -o-transition:all .6s linear .5s;
     transition:all .6s linear .5ss;
@@ -488,7 +482,7 @@
     height:79px;
     margin:-600px 0 0 -286px;
     -webkit-transition:all .9s linear .7s;
-    -mox-transition:all .9s linear .7s;
+    -moz-transition:all .9s linear .7s;
     -ms-transition:all .9s linear .7s;
     -o-transition:all .9s linear .71s;
     transition:all .9s linear .7s;
@@ -501,7 +495,7 @@
     height:61px;
     margin:-300px 0 0 -255px;
     -webkit-transition:all .6s linear .5s;
-    -mox-transition:all .6s linear .5s;
+    -moz-transition:all .6s linear .5s;
     -ms-transition:all .6s linear .5s;
     -o-transition:all .6s linear .5s;
     transition:all .6s linear .5s;
@@ -514,7 +508,7 @@
     height:79px;
     margin:-600px 0 0 -286px;
     -webkit-transition:all .9s linear .7s;
-    -mox-transition:all .9s linear .7s;
+    -moz-transition:all .9s linear .7s;
     -ms-transition:all .9s linear .7s;
     -o-transition:all .9s linear .71s;
     transition:all .9s linear .7s;
@@ -527,7 +521,7 @@
     height:60px;
     margin:-300px 0 0 -255px;
     -webkit-transition:all .6s linear .5s;
-    -mox-transition:all .6s linear .5s;
+    -moz-transition:all .6s linear .5s;
     -ms-transition:all .6s linear .5s;
     -o-transition:all .6s linear .5s;
     transition:all .6s linear .5s;
@@ -539,7 +533,7 @@
     height:79px;
     margin:-600px 0 0 -332px;
     -webkit-transition:all .9s linear .7s;
-    -mox-transition:all .9s linear .7s;
+    -moz-transition:all .9s linear .7s;
     -ms-transition:all .9s linear .7s;
     -o-transition:all .9s linear .71s;
     transition:all .9s linear .7s;
@@ -552,7 +546,7 @@
     height:61px;
     margin:-300px 0 0 -335px;
     -webkit-transition:all .6s linear .5s;
-    -mox-transition:all .6s linear .5s;
+    -moz-transition:all .6s linear .5s;
     -ms-transition:all .6s linear .5s;
     -o-transition:all .6s linear .5s;
     transition:all .6s linear .5s;
@@ -563,25 +557,26 @@
     width:462px;
     height:79px;
     margin:-600px 0 0 -231px;
-    -webkit-transition:all .9s linear 1.2s;
-    -mox-transition:all .9s linear 1.2s;
-    -ms-transition:all .9s linear 1.2s;
-    -o-transition:all .9s linear 1.2s;
-    transition:all .9s linear 1.2s;
     opacity:0;
     filter:alpha(opacity = 0);
+    -webkit-transition:all 0.8s linear 1s;
+    -moz-transition:all 0.8s linear 1s;
+    -ms-transition:all 0.8s linear 1s;
+    -o-transition:all 0.8s linear 1s;
+    transition:all 0.8s linear 1s;
 }
 .s7content .mainTit{
     width:601px;
     height:79px;
     margin:300px 0 0 -300px;
+    opacity:0;
+    filter:alpha(opacity = 0);
     -webkit-transition:all .6s linear 1.5s;
-    -mox-transition:all .6s linear 1.5s;
+    -moz-transition:all .6s linear 1.5s;
     -ms-transition:all .6s linear 1.5s;
     -o-transition:all .6s linear 1.5s;
     transition:all .6s linear 1.5s;
-    opacity:0;
-    filter:alpha(opacity = 0);
+
 }
 
 .active .titBoxlj1{
@@ -596,14 +591,15 @@
     filter:alpha(opacity = 100);
 }
 .active .intro2 .titBoxlj1{
-    margin-top:-220px;
+    margin-top:-210px;
 }
 .active .intro2 .mainTit{
-    margin-top:-120px;
+    margin-top:-110px;
 }
-.active .s7content .titBoxlj1{
-    margin-top:-180px;
+.active .basecontainer .titBoxlj1{
+    margin-top:-60px;
 }
-.active .s7content .mainTit{
-    margin-top:120px;
+.active .basecontainer .mainTit{
+    margin-top:220px;
+
 }

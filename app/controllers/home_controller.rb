@@ -1,6 +1,6 @@
 #encoding:utf-8
 class HomeController < ApplicationController
-   layout 'pc_home',only:[:index]
+   # layout 'pc_home',only:[:index]
    layout 'zhihuishequ',only:[:huishequ]
    # layout 'about_us',only:[:about_us]
     def index
@@ -13,6 +13,7 @@ class HomeController < ApplicationController
         #user_agent=true则是手机访问
         redirect_to controller: :mobile_home,action: :home and return
       end
+      render template: 'home/index', layout: 'pc_home'
     end
 
    def huishequ
