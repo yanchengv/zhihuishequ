@@ -8,10 +8,14 @@
     <th>内容</th>
     <th>序列</th>
   </tr>
-
-  <tr>
-    <td>1</td>
-    <td>100</td>
-  </tr>
+  <% if !@events.nil?%>
+   <%@events.each do |e|%>
+      <tr>
+        <td><%= e.id%></td>
+        <td><%= e.event_date%></td>
+        <td><%= e.content%></td>
+      </tr>
+  <%end%>
+  <%end%>
 
 </table>
