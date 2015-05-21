@@ -64,21 +64,25 @@
           </p>
           <div class="zone_solution">
             <h3><img src="/images/zoneB2Tit1.png" width="190" height="23" /></h3>
+
             <div class="zone_l">
               <div class="zone_lLinks">
                 <div class="zone_upLinks">
-                  <a class="zone_link1" href="#" target="_blank">一个数据中心</a>
-                  <a class="zone_link2" href="#" target="_blank">两张网</a>
+                  <a class="zone_link1" href="#" target="_blank" title="云计算" original="一个数据中心">一个数据中心</a>
+                  <a class="zone_link2" href="#" target="_blank" title="全光网，物联网"  original="两张网">两张网</a>
                 </div>
                 <div class="zone_midLinks">
-                  <a class="zone_link3" href="#" target="_blank">三种业态 真正实现三网合一</a>
+                  <a class="zone_link3" href="#" target="_blank" title="住宅，商业，商务，真正实现三网合一" original="三种业态 真正实现三网合一">三种业态 真正实现三网合一</a>
                 </div>
                 <div class="zone_downLinks">
-                  <a class="zone_link4" href="#" target="_blank">四屏互动</a>
-                  <a class="zone_link5" href="#" target="_blank">五种业务</a>
+                  <a class="zone_link4" href="#" target="_blank" title="PC,phone,pad,TV" original="四屏互动">四屏互动</a>
+                  <a class="zone_link5" href="#" target="_blank" title="基础，IT运营，媒体，电商，金融" original="五种业务">五种业务</a>
                 </div>
               </div>
             </div>
+
+
+
             <div class="zone_r">
               <p><span class="blue">（一个数据中心）</span>与施耐德电气携手共同打造微模块数据中心，建设等级T3+，建设面积1030平米，采用当今世界上最先进的微模块技术，热池技术，模块化UPS及水平送风空调，采用DCIM进行管理，代表当今数据中心建设最高水平。</p>
               <p><span class="blue">（二张网）</span>与华为公司携手共同打造智慧社区全光网络，打造成功中国首个三网合一的智慧社区。</p>
@@ -115,3 +119,21 @@
   </div>
 
 </div>
+
+<script>
+    var aLinks1 = $(".zone_lLinks a");
+    aLinks1.hover(function(){
+        var titValue1 = $(this).attr("title");
+        if($(this).attr("class")=="zone_link5"){
+            $(this).css("line-height","36px");
+        }
+        $(this).html(titValue1);
+    },function(){
+        var oriValue1 = $(this).attr("original");
+        $(this).html(oriValue1);
+        if($(this).attr("class")=="zone_link5"){
+            $(this).css("line-height","72px");
+        }
+
+    })
+</script>

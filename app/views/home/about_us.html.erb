@@ -6,4 +6,283 @@
     }
 
 </style>
-<h1>正在开发...</h1>
+<script type="text/javascript">
+    $(document).ready(function() {
+        //ie8 特殊处理
+        if(  !document.addEventListener  ){
+            $(".rotatepic>img").hide();
+            $(".roteitem").css("margin-top","0px");
+        }
+        $('#content').fullpage({
+            sectionsColor: ['#7BAABE', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#FAFAFA', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb', '#fff', '#f7f9fb'],
+            slidesNavigation: true,
+            navigation: true,
+            navigationPosition: 'right',
+            afterLoad :function(anchorLink, index){
+                if(index === 8){
+                    var vediocontainer = $(".vediocontainer");
+                    if(vediocontainer.find("object").length === 0){
+                        var object = "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0' width='680' height='300'><param name='movie' value='http://www.weaver.com.cn/emobile/Experience/VIDEO/vcastr22.swf?vcastr_file=mobile_SB.flv&IsAutoPlay=0'><param name='quality' value='high'><param name='allowScriptAccess' value='sameDomain'><param name='allowFullScreen' value='True'><param name='wmode' value='opaque'><embed src='http://www.weaver.com.cn/emobile/Experience/VIDEO/vcastr22.swf?vcastr_file=mobile_SB.flv&IsAutoPlay=0' quality='high' pluginspage='http://www.macromedia.com/go/getflashplayer' type='application/x-shockwave-flash' width='680' height='300' allowscriptaccess='sameDomain' allowfullscreen='True'>"+
+                                "</object>"
+                        vediocontainer.append(object);
+                    }
+                }
+            }
+        });
+
+        //$('.apply, .applybtn').themePopover();
+    });
+</script>
+
+
+<div id="content">
+  <div id="section1" class="section section1">
+    <div class="intro1">
+      <div class="usW960">
+        <div class="outsidewrap">
+          <div class="innerwrap">
+            <ul class="sum">
+              <li>
+                <div class="us_picL">
+                  <div class="us_timeSpot">2014/10月</div>
+                </div>
+                <div class="us_picR">
+                  <p><a href="#" target="_blank">参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="us_picL">
+                  <div class="us_timeSpot">2014/10月</div>
+                </div>
+                <div class="us_picR">
+                  <p><a href="#" target="_blank">参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="us_picL">
+                  <div class="us_timeSpot">2014/10月</div>
+                </div>
+                <div class="us_picR">
+                  <p><a href="#" target="_blank">参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="us_picL">
+                  <div class="us_timeSpot">2014/10月</div>
+                </div>
+                <div class="us_picR">
+                  <p><a href="#" target="_blank">参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="us_picL">
+                  <div class="us_timeSpot">2014/10月</div>
+                </div>
+                <div class="us_picR">
+                  <p><a href="#" target="_blank">参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="us_picL">
+                  <div class="us_timeSpot">2014/10月</div>
+                </div>
+                <div class="us_picR">
+                  <p><a href="#" target="_blank">参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="us_picL">
+                  <div class="us_timeSpot">2014/10月</div>
+                </div>
+                <div class="us_picR">
+                  <p><a href="#" target="_blank">参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <span class="us_left"></span>
+          <span class="us_right"></span>
+          <ol class="dots">
+            <li class="currentdot">
+              <em>2013 <br><span>6月</span></em>
+            </li>
+            <li>
+              <em>2013 <br><span>6月</span></em>
+            </li>
+            <li>
+              <em>2013 <br><span>6月</span></em>
+            </li>
+            <li>
+              <em>2013 <br><span>6月</span></em>
+            </li>
+            <li>
+              <em>2013 <br><span>6月</span></em>
+            </li>
+            <li>
+              <em>2013 <br><span>6月</span></em>
+            </li>
+            <li class="us_lastLi">
+              <em>2013 <br><span>6月</span></em>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="section2" class="section section2">
+    <div class="intro1 intro2">
+
+
+    </div>
+
+
+  </div>
+  <div id="section3" class="section section3">
+    <div class="intro1 intro2">
+
+
+    </div>
+
+
+  </div>
+  <div id="section4" class="section section4">
+    <div class="intro1 intro2">
+
+
+    </div>
+
+
+  </div>
+
+  <div id="section5" class="section section5">
+    <div class="intro1 intro2">
+
+
+      <div id="footer">
+        <div class="w960">
+          <p class="links">
+            <a href="#" target="_blank">首页</a>
+            <a href="#" target="_blank">智慧社区</a>
+            <a href="#" target="_blank">慧生活</a>
+            <a href="#" target="_blank">慧办公</a>
+            <a href="#" target="_blank">慧购物</a>
+            <a href="#" target="_blank">关于我们</a>
+            <a href="#" target="_blank">招贤纳士</a>
+            <a href="#" target="_blank">APP下载</a>
+          </p>
+          <p class="address">
+            <span>版权所有：云南彩立方数据科技有限公司</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            ICP备案号：京ICP备05068367号
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+    // JavaScript Document
+    function dotClick(ulName,btnr,btnl,dotName,moveTime){
+
+        /*在UI内部结尾处插入一个和第一个一样的li*/
+        var myUl = $(ulName);
+        var myli = $(ulName).children("li:first");
+        var mylis = $(ulName).children("li");
+        var oldot=$(dotName);
+        var btnRight = $(btnr);
+        var btnLeft = $(btnl);
+        /*for(var i=0;i<mylis.length-1;i++)
+         {
+         oldot.append("<li></li>");
+         }*/
+        var tbsc = null;
+        var tips=$(myli).clone(true);
+        myUl.append(tips);
+        var mylilast = $(ulName).children("li:last");
+        var mydotlilast = $(dotName).children("li:last");
+        /*点击事件*/
+        var num = 0;/*图片的*/
+        var num2 = 0;/*小点点的*/
+        var imgheight =myUl.children("li").css('width');/*获取插入图片的宽度*/
+        imgheight = parseInt(imgheight)/*转义成数字*/
+        var steps = myUl.children("li").length;/*获取li个数*/
+        myUl.width(imgheight*steps)/*给ul赋值--宽度*/
+        btnRight.click(function(){
+            clearInterval(tbsc);
+            num2++;
+            num++;
+            var distance=imgheight*-num;
+            if(num > myUl.children("li:last").index()){
+                num=1;
+                myUl.css('left',0).stop().animate({left:(imgheight*-1)},300);
+            }else{
+                myUl.stop().animate({left:distance},300);
+            };
+            if(num2 > mydotlilast.index()){
+                num2 = 0;
+                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
+            }else{
+                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
+            }
+            tbsc=setInterval(sports,moveTime);
+        })
+        btnLeft.click(function(){
+            clearInterval(tbsc);
+            num2--;
+            num--;
+            var num1 = mylilast.index();
+            var dist = imgheight*num*-1;
+            if(num < 0){
+                num = num1-1;
+                myUl.css('left',(num1*-1*imgheight)).stop().animate({left:((num1-1)*-1*imgheight)},300)
+            }else{
+                myUl.stop().animate({left:dist},300);
+            }
+            if(num2 < 0){
+                num2 = mydotlilast.index();
+                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
+            }else{
+                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
+            }
+            tbsc=setInterval(sports,moveTime);
+        })
+        /*定时器*/
+        function sports(){
+            num2++;
+            num++;
+            var distance=imgheight*-num;
+            if(num > myUl.children("li").index()){
+                num=1;
+                myUl.css('left',0).stop().animate({left:(imgheight*-1)},300);
+            }else{
+                myUl.stop().animate({left:distance},300);
+            };
+            if(num2 > mydotlilast.index()){
+                num2 = 0;
+                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
+            }else{
+                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
+            }
+        }
+        tbsc=setInterval(sports,moveTime);
+
+        var distbts;
+        oldot.children("li").click(function(){
+            distbts=imgheight*$(this).index()*-1;
+            $(this).addClass('currentdot').siblings().removeClass('currentdot');
+            myUl.animate({left:distbts},300);
+            num = $(this).index();
+            num2 = $(this).index();
+            clearInterval(tbsc);
+            tbsc=setInterval(sports,moveTime);
+        })
+    }
+    dotClick($(".sum"),$(".us_right"),$(".us_left"),$(".dots"),5000)
+
+
+</script>
