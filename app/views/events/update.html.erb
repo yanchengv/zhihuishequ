@@ -1,0 +1,35 @@
+<table>
+
+
+
+  <form accept-charset="UTF-8" action="/events/update" method="post">
+
+    <tr>
+      <td>时间</td>
+      <td><input name="event[event_date]" placeholder="时间" type="month" value="<%= @event.event_date%>" ></td>
+    </tr>
+
+    <!--<tr>-->
+    <!--<td>序列号</td>-->
+    <!--<td> <input name="event[position]" placeholder="序列号" type="text"></td>-->
+    <!--</tr>-->
+
+    <tr>
+      <td>内容</td>
+      <td>
+        <textarea rows="7" cols="80" name="event[content]" placeholder="如有序列请以：@#字符隔开，例如1.xxx@#2.xxx@#3.xxx"><%= @event.content%></textarea>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td><button type="submit">提交</button> </td>
+    </tr>
+
+  </form>
+
+
+</table>
+<div><%= flash[:flag]%></div>
+
+

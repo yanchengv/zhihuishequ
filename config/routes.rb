@@ -45,7 +45,9 @@ Rails.application.routes.draw do
        get 'show',to:'events#show'
        get 'new',to:'events#new'
        post 'create',to:'events#create'
-
+       get 'destroy',to:'events#destroy'
+       get 'show_update',to:'events#show_update'
+       post 'update',to:'events#update'
      end
    end
 

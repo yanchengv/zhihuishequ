@@ -5,8 +5,8 @@ var scrolltotop={
 		scrollduration:400, 
 		fadeduration:[500,100] 
 	},
-	controlHTML:'<div class="stSharp" style="  background-repeat: no-repeat;background-image:url(img/topback.png);width:54px;height:54px;cursor:pointer;" title="���ض���"></div>'
-		+'<div class="stApply" style="  background-repeat: no-repeat;background-image:url(img/apply.png);width:54px;height:99px;cursor:pointer;margin-top: -8px;"></div>',
+	controlHTML:'<div class="stSharp" style="  background-repeat: no-repeat;background-image:url();width:54px;height:54px;cursor:pointer;" title="���ض���"></div>'
+		+'<div class="stApply" style="  background-repeat: no-repeat;background-image:url();width:54px;height:99px;cursor:pointer;margin-top: -8px;"></div>',
 	controlattrs:{offsetx:60,offsety:280},
 	anchorkeyword:"#top",
 	state:{
@@ -64,17 +64,17 @@ var scrolltotop={
 		});
 
 		mainobj.$control.find('.stSharp').hover(function(){
-			  $(this).css("backgroundImage","url(img/topback_hover.png)")
+			  $(this).css("backgroundImage","url()")
 		},function(){
-			  $(this).css("backgroundImage","url(img/topback.png)")
+			  $(this).css("backgroundImage","url()")
 		});
         
         
 
 		mainobj.$control.find('.stApply').hover(function(){
-			$(this).css("backgroundImage","url(img/apply_hover.png)")
+			$(this).css("backgroundImage","url()")
 		},function(){
-			$(this).css("backgroundImage","url(img/apply.png)")
+			$(this).css("backgroundImage","url(")
 		});
         
 		var e_url = window.location.href;
