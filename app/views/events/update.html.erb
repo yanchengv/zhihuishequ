@@ -1,4 +1,6 @@
-<table>
+<div class="ds_box">
+  <h3 class="add_dsj">修改大事件</h3>
+<table class="table2">
 
 
 
@@ -17,13 +19,14 @@
     <tr>
       <td>内容</td>
       <td>
-        <textarea rows="7" cols="80" name="event[content]" placeholder="如有序列请以：@#字符隔开，例如1.xxx@#2.xxx@#3.xxx"><%= @event.content%></textarea>
+        <textarea rows="7" cols="110" name="event[content]" placeholder="如有序列请以：@#字符隔开，例如1.xxx@#2.xxx@#3.xxx"><%= @event.content%></textarea>
       </td>
     </tr>
 
 
     <tr>
-      <td><button type="submit">提交</button> </td>
+      <td></td>
+      <td><button class="add"  type="submit">提交</button> </td>
     </tr>
 
   </form>
@@ -32,4 +35,4 @@
 </table>
 <div><%= flash[:flag]%></div>
 
-
+</div>

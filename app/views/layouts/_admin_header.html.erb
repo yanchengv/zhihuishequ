@@ -6,7 +6,7 @@
 
   <% if !current_user.nil? &&current_user.is_admin==true%>
       <li><a href="/events/show">大事记</a></li>
-      <li><a href="/users/setting">设置</a></li>
+      <li><a href="/admins/setting">设置</a></li>
       <li><a href="/sessions/destroy">退出</a></li>
   <%else%>
       <font color="#f0f8ff">欢迎登录后台管理系统</font>

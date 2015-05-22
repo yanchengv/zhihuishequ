@@ -1,0 +1,22 @@
+<div class="ds_box">
+  <h3 class="add_dsj">修改大事件</h3>
+<h1>修改</h1>
+<div ><%= flash[:flag]%></div>
+  <table class="table2">
+<%=form_for :user,url: {controller: 'users',action: 'update',method: 'post'} do |f|%>
+        <tr>
+          <td width="50px"><%=f.label :'姓名'%></td>
+          <td> <%=f.text_field :name,value:@user.name %></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> <%=f.submit '提交',:class=> "add",:style=>"padding:0 15px;"%></td>
+        </tr>
+
+
+
+<%end%>
+</table>
+    </div>
+
+

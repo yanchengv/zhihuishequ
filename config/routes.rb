@@ -29,6 +29,7 @@ Rails.application.routes.draw do
       collection do
          get 'login',to:'admins#login'
          get 'home',to:'admins#home'
+         get 'setting',to:'admins#setting'
       end
     end
 

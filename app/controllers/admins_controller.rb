@@ -13,6 +13,8 @@ class AdminsController < ApplicationController
   def show
 
   end
-
+   def setting
+     @user=User.where(id:current_user.id).first
+   end
 
 end

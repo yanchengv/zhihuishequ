@@ -1,23 +1,27 @@
+<div class="ds_box">
+  <h3 class="add_dsj">大事记列表</h3>
+  <div class="btn_box">
+    <button class="add fr"><a href="/events/new">添加</a></button>
+  </div>
+  <table class="table" cellpadding="0" cellspacing="0">
+    <tr>
+      <th>id</th>
+      <th>日期</th>
+      <th>内容</th>
+      <th colspan="2">序列</th>
+    </tr>
+    <% if !@events.nil?%>
+        <%@events.each do |e|%>
+            <tr>
+              <td><%= e.id%></td>
+              <td><%= e.event_date%></td>
+              <td><%= e.content%></td>
+              <td><a href="/events/destroy?id=<%= e.id%>">删除</a></td>
+              <td><a href="/events/show_update?id=<%= e.id%>">修改</a></td>
+            </tr>
+        <%end%>
+    <%end%>
 
-<h1>大事记列表</h1>
- <a href="/events/new">添加</a>
-<table border="1">
-  <tr>
-    <th>id</th>
-    <th>日期</th>
-    <th>内容</th>
-    <th>序列</th>
-  </tr>
-  <% if !@events.nil?%>
-   <%@events.each do |e|%>
-      <tr>
-        <td><%= e.id%></td>
-        <td><%= e.event_date%></td>
-        <td><%= e.content%></td>
-        <td><a href="/events/destroy?id=<%= e.id%>">删除</a></td>
-        <td><a href="/events/show_update?id=<%= e.id%>">修改</a></td>
-      </tr>
-  <%end%>
-  <%end%>
+  </table>
+</div>
 
-</table>

@@ -1,0 +1,77 @@
+.ds_box{
+    width:960px;
+    margin:15px auto;
+    background:#fff;
+    border:1px solid #dcdcdc;
+    font-size:14px;
+}
+.ds_box .table{
+    width:90%;
+    margin:10px auto;
+    font-size:14px;
+    border-top:1px solid #ccc;
+    border-right:1px solid #ccc;
+}
+.ds_box .table2{
+    width:90%;
+    font-size:14px;
+    margin:10px auto;
+}
+.ds_box .table2 tr td{
+    padding:10px 5px;
+}
+.ds_box .table2 input{
+    border:1px solid #dcdcdc;
+    font-size:14px;
+    padding:10px;
+}
+.ds_box .table tr td{
+    text-align:center;
+    padding:10px 5px;
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+}
+.ds_box .table tr th{
+    padding:10px 5px;
+    border-bottom:2px solid #ccc;
+    border-left:1px solid #ccc;
+    background:#eee;
+    color:#333;
+    font-size:16px;
+}
+.ds_box .table tr td a{
+    color:#5cb85c;
+}
+
+.ds_box .add{
+    height:40px;
+    text-align:center;
+    color:#fff;
+    line-height:40px;
+    border-radius:4px;
+    padding:0 15px;
+    font-size:14px;
+    margin-bottom:15px;
+    background:#5cb85c;
+    font-family:"Microsof YaHei",Arial;
+}
+.ds_box .add a:hover{
+    color:#fff !important;
+}
+.ds_box .add:hover{
+    background: #6ecb6e;
+}
+.add_dsj{
+    font-size:18px;
+    border-bottom:1px solid #ccc;
+    padding:15px;
+    margin-bottom:15px;
+    color:#fff;
+    background:#337ab7;
+
+}
+.btn_box{
+    width:90%;
+    margin:10px auto;
+}
+.fr{float:right;}
