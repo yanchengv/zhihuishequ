@@ -746,7 +746,7 @@
 .s7content .titBoxlj1{
     width:462px;
     height:79px;
-    margin:-400px 0 0 -231px;
+    margin:-600px 0 0 -231px;
     -webkit-transition:all .9s linear 1.2s;
     -moz-transition:all .9s linear 1.2s;
     -ms-transition:all .9s linear 1.2s;
@@ -1137,7 +1137,7 @@
     margin-top:-120px;
 }
 .active .s7content .titBoxlj1{
-    margin-top:-170px;
+    margin-top:-320px;
     opacity:1;
     filter:alpha(opacity=100);
 }
