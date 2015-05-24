@@ -1,7 +1,7 @@
 
 /*about us*/
 .section{
-	overflow:hidden;	
+	overflow:hidden;
 }
 .section1 .intro1{
 	width:100%;
@@ -35,11 +35,11 @@
 	top:50%;
 	margin-left:-480px;
 	margin-top:-300px;
-	-webkit-transition:all .6s linear .3s;	
-	-moz-transition:all .6s linear .3s;	
-	-ms-transition:all .6s linear .3s;	
+	-webkit-transition:all .6s linear .3s;
+	-moz-transition:all .6s linear .3s;
+	-ms-transition:all .6s linear .3s;
 	-o-transition:all .6s linear .3s;
-	transition:all .6s linear .3s;	
+	transition:all .6s linear .3s;
 }
 .active .usW960{
 	margin-top:-77px;
@@ -51,7 +51,7 @@
 .us_picL{
 	float:left;
 	width:308px;
-	height:100%;	
+	height:100%;
 }
 .us_picR{
 	float:left;
@@ -68,7 +68,7 @@
 	font-size:20px;
 	line-height:42px;
 	color:#000;
-	font-family:"microsoft yehei";	
+	font-family:"microsoft yehei";
 }
 .us_timeSpot{
 	font-size:48px;
@@ -119,20 +119,20 @@
 }
 .w960{
 	width:960px;
-	margin:0 auto;	
+	margin:0 auto;
 	height:113px;
 }
 #footer p.links{
 	padding-left:34px;
 	height:auto;
-	opacity:1;	
+	opacity:1;
 	filter:alpha(opacity=100);
 	text-align:left;
 	padding-top:26px;
 	margin-bottom:12px;
 }
 #footer p.links a{
-	padding:0 10px;	
+	padding:0 10px;
 	color:#a0ecff;
 	font-size:12px;
 	font-weight:700;
@@ -141,7 +141,7 @@
 }
 #footer p.address{
 	opacity:1;
-	filter:alpha(opacity=100);	
+	filter:alpha(opacity=100);
 	text-align:left;
 	color:#a0ecff;
 	font-size:12px;
