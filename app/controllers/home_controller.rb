@@ -9,10 +9,10 @@ class HomeController < ApplicationController
       ua = AgentOrange::UserAgent.new(user_agent_string)
       device = ua.device
       user_agent=device.is_mobile?
-      if user_agent
-        #user_agent=true则是手机访问
-        redirect_to controller: :mobile_home,action: :home and return
-      end
+      # if user_agent
+      #   #user_agent=true则是手机访问
+      #   redirect_to controller: :mobile_home,action: :home and return
+      # end
       render template: 'home/index', layout: 'pc_home'
     end
 
