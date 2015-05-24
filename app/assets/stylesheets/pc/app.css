@@ -3,32 +3,34 @@
 .app_box{
 	width:100%;
 	height:100%;
-	background:url(/images/appbg.jpg) no-repeat center bottom #eee;
-	height:1000px;
+	background:url(/images/appbg.jpg) no-repeat 60% bottom #eee;
+	height:480px;
 }
 
 .app_ctrlBox{
-	height:557px;
-	width:447px;
+	height:200px;
+	width:200px;
 	margin:0 auto 0;
-	padding-top:358px;
+	padding-top:180px;
 }
-.app_erCode{
-	width:447px;
-	height:446px;
-	margin-bottom:50px;	
+.app_erCode img{
+	width:200px;
+	height:200px;
+	margin-bottom:30px;
+    display:inline-block;
 }
 .app_downloadBtns{
-	width:447px;
-	height:61px;
+	width:400px;
+	/*height:61px;*/
+    margin-left:-25px
 }
 .app_downloadBtns a{
-	width:188px;
-	height:61px;	
+	width:120px;
+	height:41px;
 	float:left;
 	display:block;
 }
 .app_andriod{
-	margin-right:70px;	
-	
+	margin-right:10px;
+
 }
