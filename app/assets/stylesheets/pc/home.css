@@ -1142,7 +1142,7 @@
     filter:alpha(opacity=100);
 }
 .active .s7content .mainTit{
-    margin-top:130px;
+    margin-top:-30px;
     opacity:1;
     filter:alpha(opacity=100);
 
