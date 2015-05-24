@@ -1,0 +1,34 @@
+
+/* App */
+.app_box{
+	width:100%;
+	height:100%;
+	background:url(/images/appbg.jpg) no-repeat center bottom #eee;
+	height:1000px;
+}
+
+.app_ctrlBox{
+	height:557px;
+	width:447px;
+	margin:0 auto 0;
+	padding-top:358px;
+}
+.app_erCode{
+	width:447px;
+	height:446px;
+	margin-bottom:50px;	
+}
+.app_downloadBtns{
+	width:447px;
+	height:61px;
+}
+.app_downloadBtns a{
+	width:188px;
+	height:61px;	
+	float:left;
+	display:block;
+}
+.app_andriod{
+	margin-right:70px;	
+	
+}

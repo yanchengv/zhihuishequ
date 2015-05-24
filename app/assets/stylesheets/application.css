@@ -19,6 +19,7 @@
  *= require pc/zhaoxiannashi
  *= require pc/huishenghuo
  *= require pc/events
+ *= require pc/app
  *require_all pc
 
  *= require_self

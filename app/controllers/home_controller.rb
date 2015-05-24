@@ -38,4 +38,8 @@ class HomeController < ApplicationController
   def join_us
 
   end
+
+  def app
+
+  end
 end

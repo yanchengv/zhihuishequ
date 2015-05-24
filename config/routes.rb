@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get 'huigouwu',to:'home#huigouwu'
       get 'about_us',to:'home#about_us'
       get 'join_us',to:'home#join_us'
+      get 'app',to:'home#app'
     end
   end
   resource :users do
