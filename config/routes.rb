@@ -59,10 +59,16 @@ Rails.application.routes.draw do
       end
     end
 
-   resource :weixin do
+   resource :weixins do
      collection do
-
-       get 'home',to:'weixin#home'
+       get 'index',to:'weixins#index'
+       get 'huishequ',to:'weixins#huishequ'
+       get 'huishenghuo',to:'weixins#huishenghuo'
+       get 'huibangong',to:'weixins#huibangong'
+       get 'huigouwu',to:'weixins#huigouwu'
+       get 'about_us',to:'weixins#about_us'
+       get 'join_us',to:'weixins#join_us'
+       get 'app',to:'weixins#app'
      end
    end
 
