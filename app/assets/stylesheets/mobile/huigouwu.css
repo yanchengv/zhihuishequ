@@ -1,0 +1,46 @@
+html,body{margin:0;padding:0;}
+.hgw_banner{
+    width:100%;
+    margin:0 auto;
+}
+.img{
+    width:100% !important;
+    height:auto;
+}
+.hgw_content{
+    width:90%;
+    margin:15px auto;
+    font-family: 'Microsoft YaHei',Arial;
+    font-size:14px;
+    line-height:24px;
+}
+.hgw_top{
+    background:#9e79e8;
+    padding:15px;
+    word-break: break-all;
+    color:#fff;
+    font-family: 'Microsoft YaHei',Arial;
+
+}
+.hgw_bottom{
+    background:#ffbbdd;
+    padding:15px;
+    word-break: break-all;
+    color:#940054;
+    font-family: 'Microsoft YaHei',Arial;
+    margin-top:15px;
+
+}
+.hgw_bottom .hgw_t{
+    font-size:16px;
+    color:#940054;
+    font-weight:bold;
+    font-family: "Microsoft YaHei",Arial;
+}
+
+.hgw_t{
+    font-size:16px;
+    color:#fff;
+    font-weight:bold;
+    font-family: "Microsoft YaHei",Arial;
+}
