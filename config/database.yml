@@ -30,3 +30,12 @@ production:
    pool: 5
    username: root
    password: viicare
+
+# production:
+#   host: host.eduoyun.com
+#   adapter: mysql2
+#   database: zhihuishequ_production
+#   pool: 5
+#   username: clfsj
+#   password: Bex0127
+
