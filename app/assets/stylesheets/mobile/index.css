@@ -1,0 +1,95 @@
+p{margin:0;padding:0;}
+a{text-decoration: none;}
+.menu_box_m{
+    width:340px;
+    height:220px;
+    margin:20px auto;
+}
+.menu_box_m .left{
+    float:left;
+    width:180px;
+}
+.menu_box_m .right{
+    float:left;
+    width:160px;
+}
+.menu_box_m .left .menu_box{
+    width:78px;
+    height:81px;
+    line-height:73px;
+    font-size:16px;
+    float:left;
+    font-family: "Microsoft YaHei",Arial;
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari 和 Chrome */
+    border-radius: 5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    text-align:center;
+}
+
+.menu_box_m .right .menu_box2{
+    width:158px;
+    height:51px;
+    line-height:48px;
+    font-size:16px;
+    font-family: "Microsoft YaHei",Arial;
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari 和 Chrome */
+    border-radius: 5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    text-align:center;
+}
+.m1{
+    border:1px solid #a6d0ff;
+    margin-right:10px;
+    background: #beddff;
+}
+.m1 a{
+    color:#0066d9;
+}
+.m2{
+    border:1px solid #fccc89;
+    background: #ffe8c4
+
+}
+.m2 a{
+    color: #faa127
+}
+.m3{
+    border:1px solid #80c877;
+    margin-top:10px;
+    margin-right:10px;
+    background: #caffc2
+}
+.m3 a{
+    color: #60c03c
+}
+.m4{
+    border:1px solid #bf9cdc;
+    margin-top:10px;
+    background: #e6ccff
+}
+.m4 a{
+    color: #9662ba
+}
+.m5{
+    border:1px solid #f4b2ac;
+    background:#ffd1d1
+}
+.m5 a{
+    color: #cd6f6b
+}
+.m6{
+    border:1px solid #a3e2e8;
+    margin-top:10px;
+    background:#d1fffc;
+}
+.m6 a{
+    color: #51accd
+}
+.m7{
+    border:1px solid #f0e294;
+    margin-top:10px;
+    background:#fdffd1
+}
+.m7 a{
+    color: #f1aa4c
+}
