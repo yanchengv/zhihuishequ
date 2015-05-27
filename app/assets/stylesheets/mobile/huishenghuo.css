@@ -1,0 +1,27 @@
+.hsh_info{
+    background:#ff8500;
+    padding:15px;
+    color:#fff;
+    word-break: break-all;
+}
+.hsh_con{
+    margin:25px auto;
+}
+.hsh_con h3{
+    font-size:18px;
+    color:#333;
+    font-family: "Microsoft YaHei",Arial;
+    padding-bottom:10px;
+    border-bottom:1px solid #dcdcdc;
+}
+.hsh_con p{
+    line-height:24px;
+    color:#666;
+    font-size:14px;
+}
+.hsh_con p b{
+   color: #ff8500;
+    display:block;
+    padding:5px 0;
+    font-size:16px;
+}

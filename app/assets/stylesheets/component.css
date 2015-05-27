@@ -2,22 +2,26 @@
 .cbp-spmenu {
 	background: #47a3da;
 	position: fixed;
+    z-index:9999;
 }
 
-.cbp-spmenu h3 {
+.cbp-spmenu h4 {
 	color: #afdefa;
-	font-size: 1.9em;
+	font-size: 1.2em;
 	padding: 20px;
 	margin: 0;
 	font-weight: 300;
 	background: #0d77b6;
+    font-family:"Microsoft YaHei",Arial;
 }
 
 .cbp-spmenu a {
 	display: block;
 	color: #fff;
-	font-size: 1.1em;
+	font-size: 0.9em;
 	font-weight: 300;
+    text-decoration: none;
+    font-family:"Microsoft YaHei",Arial;
 }
 
 .cbp-spmenu a:hover {
@@ -106,6 +110,8 @@
 	overflow-x: hidden;
 	position: relative;
 	left: 0;
+    font-family:"Microsoft YaHei",Arial;
+
 }
 
 .cbp-spmenu-push-toright {

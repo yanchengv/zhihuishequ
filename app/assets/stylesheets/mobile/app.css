@@ -1,0 +1,24 @@
+.app_box{
+    width:100%;
+    background:url("/images/app_bg.jpg") no-repeat center bottom #eeeeee;
+    position: relative;
+    min-height:400px;
+}
+.app_btn{
+    width:240px;
+    margin-left:-120px;
+    position:absolute;
+    bottom:30px;
+    left:50%;
+}
+.ios{
+    margin-right:10px;
+}
+.ios,.and{
+    width:110px;
+    display:inline-block;
+}
+.ios img,.and img  {
+    width:100%;
+    height:auto;
+}

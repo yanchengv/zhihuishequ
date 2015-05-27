@@ -16,5 +16,11 @@
   *= require mobile/huigouwu
   *= require mobile/slick
  *= require mobile/slick-theme
+ *= require mobile/huishenghuo
+  *= require mobile/header
+ *= require mobile/huibangong
+  *= require mobile/zhaoping
+  *= require mobile/footer
+ *= require mobile/app
  *= require_self
  */
