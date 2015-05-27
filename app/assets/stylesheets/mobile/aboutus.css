@@ -1,0 +1,77 @@
+.aboutus_banner{
+    background:url("/images/bg_5.jpg") no-repeat center center;
+    min-height:160px;
+    height:auto;
+    width:100%;
+    padding-top:90px;
+}
+.aboutus_banner h3{
+    text-align: center;
+    width:80%;
+    margin:0 auto;
+    font-size:20px;
+    font-weight:bold;
+    color:#fff;
+    font-family: "Microsoft YaHei",Arial;
+}
+.aboutus_banner p{
+    text-align: center;
+    width:80%;
+    margin:5px auto 15px auto;
+    font-size:14px;
+    color:#fff;
+    font-family: "Microsoft YaHei",Arial;
+}
+.aboutus_ul{
+    width:80%;
+    margin:15px auto;
+}
+.aboutus_ul li{
+    font-size:14px;
+    line-height:24px;
+    color: #666;
+    padding:5px 0;
+    word-break: break-all;
+    font-family: "Microsoft YaHei",Arial;
+}
+.us_left,.us_right{
+    float:left;
+    text-align: center;
+    width:44%;
+    margin:15px 1%;
+    background:#117400;
+    color:#fff;
+    padding:2%;
+    font-size:14px;
+    line-height:24px;
+    min-height:140px;
+}
+.us_img{
+    margin:15px auto;
+}
+.us_img li{
+    width:30%;
+    float:left;
+    margin:1%;
+}
+.us_img li img{
+    width:100%;
+    height:auto;
+}
+.us_photo{
+    text-align:center;
+    margin:15px 0;
+}
+.us_photo p{
+    margin:0;
+    padding:0;
+    line-height:normal;
+}
+.us_photo img{
+    width:40%;
+    height:auto;
+    border:1px solid #dcdcdc;
+    padding:3px;
+    margin:15px 0 0 0;
+
+}
