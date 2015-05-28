@@ -2,7 +2,7 @@ h3,h4{margin:0;padding:0;}
 .join_title{
     height:30px;
     line-height:30px;
-    padding:0 15px;
+    padding:10px 15px;
     background-image: -moz-linear-gradient(top, #fff, #eee); /* Firefox */
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #eee)); /* Saf4+, Chrome */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eee', GradientType='0'); /* IE*/
@@ -11,7 +11,7 @@ h3,h4{margin:0;padding:0;}
     font-size:18px;
 }
 .join_content{
-    border:1px solid #eee;
+    border:1px solid #e7e7e7;
     background:#fff;
     margin:15px auto;
 }
