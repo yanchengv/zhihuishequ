@@ -1,6 +1,6 @@
 
-<body class="cbp-spmenu-push">
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+  <button id="showRightPush2" style="float: right"><img src="/images/menu.png"/></button>
   <h4>彩立方</h4>
 
   <a href="/weixins/index">主页</a>
@@ -11,13 +11,16 @@
   <a href="/weixins/about_us">关于我们</a>
   <a href="/weixins/join_us">招贤纳士</a>
   <!--<a href="/weixins/app">APP下载</a>-->
+
 </nav>
 <div class="logo"><a><img src="/images/logo.png" width="123" height="41"/></a></div>
 <button id="showRightPush" style="float: right"><img src="/images/menu.png"/></button>
+<div style="clear:both"></div>
 <script>
 
     var  menuRight = document.getElementById( 'cbp-spmenu-s2' ),
             showRightPush = document.getElementById( 'showRightPush' ),
+            showRightPush2= document.getElementById( 'showRightPush2' ),
             body = document.body;
 
     showRightPush.onclick = function() {
@@ -26,28 +29,12 @@
         classie.toggle( menuRight, 'cbp-spmenu-open' );
 
     };
+    showRightPush2.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toleft' );
+        classie.toggle( menuRight, 'cbp-spmenu-open' );
+
+    };
 </script>
-</body>
 
 
-
-<!--
-
-<nav id="weixin-menu">
-  <ul>
-    <li><a href="weixins/index">主页</a></li>
-    <li> <a href="weixins/huishequ">彩立方</a></li>
-    <li> <a href="/weixins/huibangong">慧办公</a></li>
-    <li><a href="/weixins/huishenghuo">慧生活</a></li>
-    <li><a href="/weixins/huigouwu">慧购物</a></li>
-    <li> <a href="/weixins/about_us">关于我们</a></li>
-    <li><a href="/weixins/join_us">招贤纳士</a></li>
-    <li> <a href="/weixins/app">APP下载</a></li>
-  </ul>
-</nav>
-<a href="#weixin-menu">Open the menu</a>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#weixin-menu").mmenu();
-    });
-</script>-->

@@ -18,6 +18,5 @@
 //= require turbolinks
 //= require mobile/classie.js
 //= require mobile/modernizr.custom.js
-//= require mobile/jquery.mmenu.min.all
 //= require mobile/slick.min
 //require_tree .

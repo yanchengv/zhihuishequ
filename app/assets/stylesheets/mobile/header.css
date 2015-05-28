@@ -1,9 +1,9 @@
-.cbp-spmenu-push{
+.weixin_header_menu{
     width:100%;
     height:50px;
     border-bottom:2px solid #dbdcde;
     background:#fff;
-    position:fixed;
+    /*position:fixed;*/
     top:0px;
     z-index:9;
 }
