@@ -43,22 +43,21 @@
     font-weight:300;
 }
 .hbg_moulds{
-    width:918px;
-    padding-left:42px;
+    width:960px;
     height:auto;
     overflow:hidden;
     margin-bottom:75px;
 }
 .hbg_mouldUnits{
-    width:211px;
-    padding-top:15px;
-    height:186px;
+    width:182px;
+    padding-top:5px;
+    height:177px;
     float:left;
-    margin-right:14px;
+    margin-right:10px;
 }
 .hbg_mouldUnits h3{
-    padding:25px 0 20px;
-    font-size:28px;
+    padding:15px 0 15px;
+    font-size:24px;
     color:#117600;
     font-family:"Microsoft YaHei";
     width:100%;
@@ -67,24 +66,27 @@
 .hbg_mouldUnits p{
     width:150px;
     margin:0 auto;
-    font-size:16px;
+    font-size:14px;
     color:#8f8f8f;
-    line-height:28px;
+    line-height:normal;
     text-align:center;
     font-family:"Microsoft YaHei";
 }
 
 .hbg_unit1{
-    background:url(/images/hbg_MUnit1.jpg)  no-repeat;
+    background:url(/images/hbg_MUnit1.jpg)  no-repeat center center;
 }
 .hbg_unit2{
-    background:url(/images/hbg_MUnit2.jpg)  no-repeat;
+    background:url(/images/hbg_MUnit2.jpg)  no-repeat center center;
 }
 .hbg_unit3{
-    background:url(/images/hbg_MUnit3.jpg) no-repeat;
+    background:url(/images/hbg_MUnit3.jpg) no-repeat center center;
 }
 .hbg_unit4{
-    background:url(/images/hbg_MUnit4.jpg) no-repeat;
+    background:url(/images/hbg_MUnit4.jpg) no-repeat center center;
+}
+.hbg_unit5{
+    background:url(/images/hbg_MUnit5.jpg) no-repeat center center;
 }
 .hbg_addZone{
     padding-left:2px;
@@ -93,7 +95,7 @@
     overflow:hidden;
 }
 .hbg_addZone dl{
-    width:438px;
+    width:960px;
     padding-left:40px;
     height:82px;
     float:left;
@@ -105,7 +107,7 @@
     float:left;
 }
 .hbg_addZone dd{
-    width:332px;
+    width:854px;
     height:82px;
     display:table-cell;
     vertical-align:middle;

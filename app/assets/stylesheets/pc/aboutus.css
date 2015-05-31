@@ -259,7 +259,7 @@
 .dots li{ float:left;width:59px;height:59px; cursor:pointer; position:relative; background:url(../images/us_dotBg.png) no-repeat center;}
 .dots li.us_lastLi{ margin-right:0;}
 .dots li em{
-    font-size:26px;
+    font-size:18px;
     font-family:"microsoft yahei";
     color:#fff;
     position:absolute;
@@ -275,13 +275,13 @@
 }
 .dots li.currentdot{ background:url(/images/yellowDot.png) no-repeat;}
 .dots li.currentdot em{
-    font-size:34px;
+    font-size:24px;
     color:#f6ff00;
     top:-70px;
     left:-10px;
 }
 .dots li.currentdot em span{
-    font-size:24px;
+    font-size:18px;
     color:#f6ff00;
 }
 /* page2 */
