@@ -227,7 +227,7 @@
 .sum li{ float:left;width:880px;height:274px;overflow:hidden;}
 .us_picL{
     float:left;
-    width:308px;
+    width:350px;
     height:100%;
 }
 .us_picR{
@@ -240,6 +240,8 @@
     vertical-align:middle;
     width:100%;
     height:274px;
+    font-size:18px;
+    line-height:34px;
 }
 .us_picR p a{
     font-size:20px;
@@ -254,8 +256,8 @@
     padding-left: 100px;
 }
 
-.us_left{ display:block;width:30px;height:64px; background:url(/images/us_lBtn.png) no-repeat; position:absolute;left:40px;top:40%; cursor:pointer;}
-.us_right{ display:block;width:30px;height:64px; background:url(/images/us_rBtn.png) no-repeat; position:absolute;right:0px;top:40%;cursor:pointer;}
+.us_left{ display:block;width:30px;height:64px; background:url(/images/us_lBtn.png) no-repeat; position:absolute;left:50px;top:40%; cursor:pointer;}
+.us_right{ display:block;width:30px;height:64px; background:url(/images/us_rBtn.png) no-repeat; position:absolute;right:-10px;top:40%;cursor:pointer;}
 .dots{position:absolute; top:10px;height:59px; width:843px;background:url(/images/timeLineAxis.jpg) no-repeat left center;left:50%;margin-left: -391px;}
 .dots li{ float:left;width:59px;height:59px; cursor:pointer; position:relative; background:url(../images/us_dotBg.png) no-repeat center;}
 .dots li.us_lastLi{ margin-right:0;}
