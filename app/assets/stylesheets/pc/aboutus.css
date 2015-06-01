@@ -251,11 +251,12 @@
     font-size:48px;
     color:#f6ff00;
     font-family:"microsoft yehei";
+    padding-left: 100px;
 }
 
-.us_left{ display:block;width:30px;height:64px; background:url(/images/us_lBtn.png) no-repeat; position:absolute;left:-30px;top:40%; cursor:pointer;}
-.us_right{ display:block;width:30px;height:64px; background:url(/images/us_rBtn.png) no-repeat; position:absolute;right:-30px;top:40%;cursor:pointer;}
-.dots{position:absolute; top:10px;height:59px; width:843px;background:url(/images/timeLineAxis.jpg) no-repeat left center;}
+.us_left{ display:block;width:30px;height:64px; background:url(/images/us_lBtn.png) no-repeat; position:absolute;left:40px;top:40%; cursor:pointer;}
+.us_right{ display:block;width:30px;height:64px; background:url(/images/us_rBtn.png) no-repeat; position:absolute;right:0px;top:40%;cursor:pointer;}
+.dots{position:absolute; top:10px;height:59px; width:843px;background:url(/images/timeLineAxis.jpg) no-repeat left center;left:50%;margin-left: -391px;}
 .dots li{ float:left;width:59px;height:59px; cursor:pointer; position:relative; background:url(../images/us_dotBg.png) no-repeat center;}
 .dots li.us_lastLi{ margin-right:0;}
 .dots li em{
