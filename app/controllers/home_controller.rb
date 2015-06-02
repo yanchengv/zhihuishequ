@@ -1,7 +1,7 @@
 #encoding:utf-8
 class HomeController < ApplicationController
    # layout 'pc_home',only:[:index]
-   layout 'zhihuishequ',only:[:huishequ]
+   #layout 'zhihuishequ',only:[:huishequ]
    # layout 'about_us',only:[:about_us]
     def index
       # 判断手机访问还是pc端

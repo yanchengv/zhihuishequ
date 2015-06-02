@@ -20,6 +20,7 @@
  *= require pc/huishenghuo
  *= require pc/events
  *= require pc/app
+ *= require pc/zhihuishequ
  *require_all pc
 
  *= require_self
