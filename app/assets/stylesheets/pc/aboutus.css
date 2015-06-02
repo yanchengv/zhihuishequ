@@ -6,6 +6,11 @@
     width:100%;
     height:100%;
     background:url(/images/us_bg1.jpg) no-repeat center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
 }
 
 .us_tit{
@@ -22,21 +27,41 @@
     width:100%;
     height:100%;
     background:url(/images/us_bg2.jpg) no-repeat center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
 }
 .section3 .intro1{
     width:100%;
     height:100%;
     background:url(/images/us_bg3.jpg) no-repeat center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
 }
 .section4 .intro1{
     width:100%;
     height:100%;
     background:url(/images/us_bg4.jpg) no-repeat center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
 }
 .section5 .intro1{
     width:100%;
     height:100%;
     background:url(/images/us_bg5.jpg) no-repeat center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
 }
 
 .usW960{
@@ -477,34 +502,44 @@
     position:relative;
 }
 .ceo{
-    width:257px;
-    height:257px;
+    width:182px;
+    height:182px;
     position:absolute;
     background:url(/images/grayCover.png) no-repeat center;
     opacity:0;
     filter:alpha(opacity=0);
+    -ms-transform:rotate(-45deg); /* IE 9 */
+    -moz-transform:rotate(-45deg); /* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari and Chrome */
+    -o-transform:rotate(-45deg); /* Opera */
+    transform:rotate(-45deg);
 }
 .ceo p{
     width:126px;
     height:113px;
-    margin:71px auto;
+    margin:40px 0 0 20px;
     font-family:"microsoft yahei";
     color:#fff;
     font-size:14px;
     line-height:24px;
+    -ms-transform:rotate(45deg); /* IE 9 */
+    -moz-transform:rotate(45deg); /* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari and Chrome */
+    -o-transform:rotate(45deg); /* Opera */
+    transform:rotate(45deg);
 
 }
 .ceo1{
-    left:138px;
-    top:0;
+    left:176px;
+    top:38px;
 }
 .ceo2{
-    left:0;
-    top:137px;
+    left:38px;
+    top:175px;
 }
 .ceo3{
-    left:273px;
-    top:137px;
+    left:310px;
+    top:174px;
 }
 .us_o100{
     opacity:1;

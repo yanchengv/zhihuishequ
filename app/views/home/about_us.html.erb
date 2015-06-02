@@ -393,7 +393,7 @@
             num2++;
             num++;
             var distance=imgheight*-num;
-            if(num > myUl.children("li").index()){
+            if(num > myUl.children("li:last").index()){
                 num=1;
                 myUl.css('left',0).stop().animate({left:(imgheight*-1)},300);
             }else{
