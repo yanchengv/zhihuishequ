@@ -5,7 +5,7 @@
 
 
   <form accept-charset="UTF-8" action="/events/update" method="post">
-
+        <input type="hidden" name="id" value="<%= @event.id%>">
     <tr>
       <td>时间</td>
       <td><input name="event[event_date]" placeholder="时间" type="month" value="<%= @event.event_date%>" ></td>

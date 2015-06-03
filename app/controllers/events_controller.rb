@@ -39,15 +39,17 @@ class EventsController < ApplicationController
   def update
       event_date=params[:event][:event_date]
       content=params[:event][:content]
-      @event=Event.where(event_date: event_date).first
-      if  @event.nil?
-        @event=Event.new(event_date:event_date,content:content)
-        @event.save
-      else
-        @event.update_attributes(event_date:event_date,content:content)
-      end
+      @event=Event.where(id:params[:id]).first
+      # @event=Event.where(event_date: event_date).first
+      # if  @event.nil?
+      #   @event=Event.new(event_date:event_date,content:content)
+      #   @event.save
+      # else
+      #   @event.update_attributes(event_date:event_date,content:content)
+      # end
+      @event.update_attributes(event_date:event_date,content:content)
       flash[:flag]="保存成功！"
-      render template: 'events/update'
+      redirect_to :back
   end
 
   def destroy

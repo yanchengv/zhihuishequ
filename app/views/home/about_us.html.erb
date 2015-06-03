@@ -45,23 +45,28 @@
       <div class="outsidewrap">
         <div class="innerwrap">
           <ul class="sum">
-            <li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2013/1月</div>
-              </div>
-              <div class="us_picR">
-                <p>智慧城市概念确立</p>
-              </div>
-            </li>
-            <li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2014/4月</div>
-              </div>
-              <div class="us_picR">
-                <p>智慧城市整体解决构架方案落地</p>
-              </div>
-            </li>
-            <li>
+
+            <% @events.each do |e|%>
+                <% @contents=e.content.split("@#")%>
+                <li>
+                  <div class="us_picL">
+                    <div class="us_timeSpot"><%=e.event_date%>月</div>
+                  </div>
+                  <div class="us_picR">
+                    <p><% @contents.each do |c|%>
+
+                         <%=c%><br />
+
+
+                          <%end%>
+                          </p>
+                  </div>
+                </li>
+
+            <%end%>
+
+
+            <!--<li>
               <div class="us_picL">
                 <div class="us_timeSpot">2014/5月</div>
               </div>
@@ -70,79 +75,7 @@
                   2.15日，IBM、华为正式签约广福城，落地智慧城市</p>
               </div>
             </li>
-            <li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2014/6月</div>
-              </div>
-              <div class="us_picR">
-                <p>智慧“云商务”产品推出</p>
-              </div>
-            </li>
-            <li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2014/10月</div>
-              </div>
-              <div class="us_picR">
-                <p>1.1日，彩立方筹备组正式成立，核心团队就位<br />2.智慧社区一卡通内测启动</p>
-              </div>
-            </li>
-            <li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2014/12月</div>
-              </div>
-              <div class="us_picR">
-                <p>产品线模型建成</p>
-              </div>
-            </li>
-            <li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2015/1月</div>
-              </div>
-              <div class="us_picR">
-                <p>智慧社区整体解决方案内部测试通过</p>
-              </div>
-            </li>
-            <li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2015/2月</div>
-              </div>
-              <div class="us_picR">
-                <p>骨干团队建设启动</p>
-              </div>
-            </li>
-            <li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2015/3月</div>
-              </div>
-              <div class="us_picR">
-                <p>16日，彩立方数据科技公司正式成立</p>
-              </div>
-            </li>
-
-            <li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2015/4月</div>
-              </div>
-              <div class="us_picR">
-                <p>1.彩立方骨干团队到位<br />2.施耐德授牌《微模块数据中心》<br />3.与英国驻华领事馆进行智慧安全进行洽谈</p>
-              </div>
-            </li>
-            <li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2015/5月</div>
-              </div>
-              <div class="us_picR">
-                <p>参加华为全国推广大会，作为分会场主讲嘉宾进行《智慧社区方案解决》主题演讲</p>
-              </div>
-            </li>
-            <li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2015/6月</div>
-              </div>
-              <div class="us_picR">
-                <p>1.应邀参加昆明南博会智慧社区展厅活动<br />2.应邀参加施耐德全国推广大会，作为企业级IDC应用典范进行宣传</p>
-              </div>
-            </li>
+-->
 
 
           </ul>
@@ -150,42 +83,19 @@
         <span class="us_left"></span>
         <span class="us_right"></span>
         <ol class="dots">
-          <li class="currentdot">
-            <em>2013 <br><span>1月</span></em>
-          </li>
-          <li>
-            <em>2014 <br><span>4月</span></em>
-          </li>
-          <li>
-            <em>2014 <br><span>5月</span></em>
-          </li>
-          <li>
-            <em>2014 <br><span>6月</span></em>
-          </li>
-          <li>
-            <em>2014 <br><span>10月</span></em>
-          </li>
-          <li>
-            <em>2014 <br><span>12月</span></em>
-          </li>
-          <li>
-            <em>2015 <br><span>1月</span></em>
-          </li>
-          <li>
-            <em>2015 <br><span>2月</span></em>
-          </li>
-          <li>
-            <em>2015 <br><span>3月</span></em>
-          </li>
-          <li>
-            <em>2015 <br><span>4月</span></em>
-          </li>
-          <li>
-            <em>2015 <br><span>5月</span></em>
-          </li>
-          <li>
-            <em>2015 <br><span>6月</span></em>
-          </li>
+              <%num=1%>
+            <% @events_date.each do |e|%>
+              <%if num==1%>
+                  <li class="currentdot">
+                    <em><%= e.event_date.split("-")[0]%> <br><span><%= e.event_date.split("-")[1]%>月</span></em>
+                  </li>
+                  <%else%>
+                  <li>
+                    <em><%= e.event_date.split("-")[0]%> <br><span><%= e.event_date.split("-")[1]%>月</span></em>
+                  </li>
+                  <%end%>
+              <%num=2%>
+           <%end%>
 
         </ol>
       </div>
