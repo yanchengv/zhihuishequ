@@ -13,7 +13,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// require turbolinks
 //= require pc/jquery.fullPage.min
 //= require pc/scrolltopcontrol
 // require pc/jquery-ui.min

@@ -13,5 +13,16 @@ def admin_data
       password:'123456',
       is_admin:true
   )
-
+  @admin1=User.create(
+      name: 'admin2',
+      email:'123456@qq.com',
+      password:'123456',
+      is_admin:true
+  )
+  @admin1=User.create(
+      name: 'admin3',
+      email:'123456@qq.com',
+      password:'123456',
+      is_admin:true
+  )
 end

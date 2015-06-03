@@ -32,6 +32,10 @@ class HomeController < ApplicationController
   end
 
   def about_us
+      @events=Event.all().order(event_date: :asc)
+      @events.each do |e|
+        p e.event_date
+      end
       render template: 'home/about_us', layout: 'about_us'
   end
 
