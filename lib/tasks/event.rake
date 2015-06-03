@@ -66,7 +66,7 @@ def event_data
 
   )
   @event12=Event.create(
-      event_date: '2015-05',
+      event_date: '2015-06',
       content:'1.应邀参加昆明南博会智慧社区展厅活动@#2.应邀参加施耐德全国推广大会，作为企业级IDC应用典范进行宣传'
 
   )
