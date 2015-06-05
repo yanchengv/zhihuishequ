@@ -17,15 +17,17 @@ class EventsController < ApplicationController
       event_date=params[:event][:event_date]
      # position=params[:event][:position]
      content=params[:event][:content]
-     @event=Event.where(event_date: event_date).first
-     if  @event.nil?
-       @event=Event.new(event_date:event_date,content:content)
-       @event.save
-     else
-       @event.update_attributes(content:content)
-     end
+     # @event=Event.where(event_date: event_date).first
+     # if  @event.nil?
+     #   @event=Event.new(event_date:event_date,content:content)
+     #   @event.save
+     # else
+     #   @event.update_attributes(content:content)
+     # end
+      @event=Event.new(event_date:event_date,content:content)
+      @event.save
      flash[:flag]="保存成功！"
-     redirect_to :back
+     redirect_to controller: :events,action: :show
   end
 
 
@@ -49,7 +51,7 @@ class EventsController < ApplicationController
       # end
       @event.update_attributes(event_date:event_date,content:content)
       flash[:flag]="保存成功！"
-      redirect_to :back
+      redirect_to controller: :events,action: :show
   end
 
   def destroy
