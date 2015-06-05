@@ -42,62 +42,83 @@
       <h3 class="us_tit">
         <img src="/images/us_tit1.png" width="100%">
       </h3>
-      <div class="outsidewrap">
-        <div class="innerwrap">
-          <ul class="sum">
-
-            <% @events.each do |e|%>
-                <% @contents=e.content.split("@#")%>
-                <li>
-                  <div class="us_picL">
-                    <div class="us_timeSpot"><%=e.event_date%>月</div>
-                  </div>
-                  <div class="us_picR">
-                    <p><% @contents.each do |c|%>
-
-                         <%=c%><br />
-
-
-                          <%end%>
-                          </p>
-                  </div>
-                </li>
-
-            <%end%>
-
-
-            <!--<li>
-              <div class="us_picL">
-                <div class="us_timeSpot">2014/5月</div>
-              </div>
-              <div class="us_picR">
-                <p>1.云南首次主办智慧城市体验展<br />
-                  2.15日，IBM、华为正式签约广福城，落地智慧城市</p>
-              </div>
-            </li>
--->
-
-
-          </ul>
-        </div>
-        <span class="us_left"></span>
-        <span class="us_right"></span>
-        <ol class="dots">
-              <%num=1%>
-            <% @events_date.each do |e|%>
-              <%if num==1%>
-                  <li class="currentdot">
-                    <em><%= e.event_date.split("-")[0]%> <br><span><%= e.event_date.split("-")[1]%>月</span></em>
-                  </li>
-                  <%else%>
-                  <li>
-                    <em><%= e.event_date.split("-")[0]%> <br><span><%= e.event_date.split("-")[1]%>月</span></em>
-                  </li>
-                  <%end%>
-              <%num=2%>
-           <%end%>
-
-        </ol>
+      <div id="timeline">
+        <ul id="dates">
+          <li><a href="#2005">2005/10月</a></li>
+          <li><a href="#2006">2006/10月</a></li>
+          <li><a href="#2007">2007/10月</a></li>
+          <li><a href="#2008">2008/10月</a></li>
+          <li><a href="#2009">2009/10月</a></li>
+          <li><a href="#2010">2010/10月</a></li>
+          <li><a href="#2012">2012/10月</a></li>
+          <li><a href="#2014">2014/10月</a></li>
+        </ul>
+        <ul id="issues">
+          <li id="2005">
+            <div class="us_picL">
+              <div class="us_timeSpot">2014/10月</div>
+            </div>
+            <div class="us_picR">
+              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+            </div>
+          </li>
+          <li id="2006">
+            <div class="us_picL">
+              <div class="us_timeSpot">2014/10月</div>
+            </div>
+            <div class="us_picR">
+              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+            </div>
+          </li>
+          <li id="2007">
+            <div class="us_picL">
+              <div class="us_timeSpot">2014/10月</div>
+            </div>
+            <div class="us_picR">
+              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+            </div>
+          </li>
+          <li id="2008">
+            <div class="us_picL">
+              <div class="us_timeSpot">2014/10月</div>
+            </div>
+            <div class="us_picR">
+              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+            </div>
+          </li>
+          <li id="2009">
+            <div class="us_picL">
+              <div class="us_timeSpot">2014/10月</div>
+            </div>
+            <div class="us_picR">
+              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+            </div>
+          </li>
+          <li id="2010">
+            <div class="us_picL">
+              <div class="us_timeSpot">2014/10月</div>
+            </div>
+            <div class="us_picR">
+              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+            </div>
+          </li>
+          <li id="2012">
+            <div class="us_picL">
+              <div class="us_timeSpot">2014/10月</div>
+            </div>
+            <div class="us_picR">
+              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+            </div>
+          </li>
+          <li id="2012">
+            <div class="us_picL">
+              <div class="us_timeSpot">2014/10月</div>
+            </div>
+            <div class="us_picR">
+              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -218,120 +239,14 @@
 </div>
 
 <script type="text/javascript">
-    // JavaScript Document
-    function dotClick(ulName,btnr,btnl,dotName,moveTime){
-
-        /*在UI内部结尾处插入一个和第一个一样的li*/
-        var myUl = $(ulName);
-        var myli = $(ulName).children("li:first");
-        var mylis = $(ulName).children("li");
-        var oldot=$(dotName);
-        var btnRight = $(btnr);
-        var btnLeft = $(btnl);
-
-
-       /* for(var i=0;i<mylis.length-1;i++)
-         {
-         oldot.append("<li></li>");
-         }*/
-
-
-
-        var aDotWidth = oldot.width();
-        var aDotLiWidth = oldot.find("li").width();
-        var oDotMr=(aDotWidth - aDotLiWidth*mylis.length)/mylis.length-1;
-        oldot.css({"padding-left":oDotMr/2,"padding-right":oDotMr/2});
-        oldot.width(aDotWidth -oDotMr);
-        aDotWidth = oldot.width();
-        var oDotLiMr =(aDotWidth - aDotLiWidth*mylis.length)/(mylis.length-1);
-
-        oldot.find("li").css("margin-right",oDotLiMr);
-        oldot.find("li:last").css("margin-right",0);
-        var tbsc = null;
-        var tips=$(myli).clone(true);
-        myUl.append(tips);
-        var mylilast = $(ulName).children("li:last");
-        var mydotlilast = $(dotName).children("li:last");
-        /*点击事件*/
-        var num = 0;/*图片的*/
-        var num2 = 0;/*小点点的*/
-        var imgheight =myUl.children("li").css('width');/*获取插入图片的宽度*/
-        imgheight = parseInt(imgheight)/*转义成数字*/
-        var steps = myUl.children("li").length;/*获取li个数*/
-        myUl.width(imgheight*steps)/*给ul赋值--宽度*/
-        btnRight.click(function(){
-            clearInterval(tbsc);
-            num2++;
-            num++;
-            var distance=imgheight*-num;
-            if(num > myUl.children("li:last").index()){
-                num=1;
-                myUl.css('left',0).stop().animate({left:(imgheight*-1)},300);
-            }else{
-                myUl.stop().animate({left:distance},300);
-            };
-            if(num2 > mydotlilast.index()){
-                num2 = 0;
-                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
-            }else{
-                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
-            }
-            tbsc=setInterval(sports,moveTime);
+    $(function(){
+        $("#timeline").timelinr({
+            autoPlay: 'true',
+            autoPlayDirection: 'forward',
+            startAt: 4  /*  默认显示第几个 */
         })
-        btnLeft.click(function(){
-            clearInterval(tbsc);
-            num2--;
-            num--;
-            var num1 = mylilast.index();
-            var dist = imgheight*num*-1;
-            if(num < 0){
-                num = num1-1;
-                myUl.css('left',(num1*-1*imgheight)).stop().animate({left:((num1-1)*-1*imgheight)},300)
-            }else{
-                myUl.stop().animate({left:dist},300);
-            }
-            if(num2 < 0){
-                num2 = mydotlilast.index();
-                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
-            }else{
-                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
-            }
-            tbsc=setInterval(sports,moveTime);
-        })
-        /*定时器*/
-        function sports(){
-            num2++;
-            num++;
-            var distance=imgheight*-num;
-            if(num > myUl.children("li:last").index()){
-                num=1;
-                myUl.css('left',0).stop().animate({left:(imgheight*-1)},300);
-            }else{
-                myUl.stop().animate({left:distance},300);
-            };
-            if(num2 > mydotlilast.index()){
-                num2 = 0;
-                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
-            }else{
-                oldot.children("li").eq(num2).addClass('currentdot').siblings().removeClass('currentdot');
-            }
-        }
-        tbsc=setInterval(sports,moveTime);
-
-        var distbts;
-        oldot.children("li").click(function(){
-            distbts=imgheight*$(this).index()*-1;
-            $(this).addClass('currentdot').siblings().removeClass('currentdot');
-            myUl.animate({left:distbts},300);
-            num = $(this).index();
-            num2 = $(this).index();
-            clearInterval(tbsc);
-            tbsc=setInterval(sports,moveTime);
-        })
-    }
-    dotClick($(".sum"),$(".us_right"),$(".us_left"),$(".dots"),5000)
-
-    /*公司高管部分  简介动画效果css*/
+    });
+    /*公司高管部分*/
     $(".ceo").hover(function(){
         $(this).addClass("us_o100").siblings().removeClass("us_o100");
     },function(){

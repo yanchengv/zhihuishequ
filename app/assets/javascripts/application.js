@@ -16,6 +16,7 @@
 // require turbolinks
 //= require pc/jquery.fullPage.min
 //= require pc/scrolltopcontrol
+//=require pc/jquery.timelinr-0.9.53
 // require pc/jquery-ui.min
 // require pc/chat
 // require pc/global

@@ -588,3 +588,20 @@
     margin-bottom:12px;
 
 }
+/*20150604修改*/
+#timeline{width:880px;height:274px;overflow:hidden;position:relative;margin:0 auto 0;}
+#dates{width:880px;height:80px;overflow:hidden;background:url(/images/timeLineAxis.jpg) no-repeat left center; -webkit-background-size:100%;-moz-background-size:100%;-ms-background-size:100%;-o-background-size:100%;
+    background-size:100%;
+}
+#dates li{list-style:none;float:left;width:180px;height:80px;font-size:18px;text-align:center;}
+#dates a{line-height:38px;padding-bottom:30px;}
+#dates .selected{font-size:32px;background:url(/images/us_dotBg.png) center 34px no-repeat; color:#f6ff00;
+    -webkit-background-size:16px 16px;
+    -moz-background-size:16px 16px;
+    -ms-background-size:16px 16px;
+    -o-background-size:16px 16px;
+    background-size:16px 16px;
+}
+
+#issues{width:880px;height:274px;overflow:hidden; margin:-50px auto 0;}
+#issues li{width:880px;height:274px;list-style:none;float:left;}
