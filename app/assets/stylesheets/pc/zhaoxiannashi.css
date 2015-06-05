@@ -23,6 +23,7 @@
 .zhaoxiannashi_content{
     width:960px;
     margin:70px auto 100px auto;
+    overflow:hidden;
 }
 .zhaoxiannashi_info{
     width:100%;

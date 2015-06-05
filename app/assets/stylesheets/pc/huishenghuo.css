@@ -4,10 +4,13 @@
     background: url(/images/huishenghuo_banner.jpg) no-repeat top center;
     border-bottom: 1px solid #dbdcde;
 }
-.huishenghuo_content{
-    width:960px;
-    margin:70px auto;
+.huishenghuo_content {
+    width: 960px;
+    margin: 70px auto;
+    overflow: hidden;
 }
+
+
 .huishenghuo_content .text{
     font-size:18px;
     font-family: "Microsoft YaHei",Arial;
@@ -19,12 +22,18 @@
    margin:70px 0;
 }
 .huishenghuo_box .left{
-    width:60%;
+    width:45%;
     float:left;
 }
 .huishenghuo_box .right{
     width:30%;
-    float:right;
+    float:left;
+    margin-left:120px;
+    display:inline-block;
+}
+.huishenghuo_box .right img,.huishenghuo_box .right2 img,{
+    width:100%;
+    max-width:400px;
 }
 .huishenghuo_box .left2{
     width:30%;
@@ -32,7 +41,9 @@
 }
 .huishenghuo_box .right2{
     width:50%;
-    float:right;
+    float:left;
+    margin-left:120px;
+    display:inline-block;
 }
 .second_t{
     color:#ff8500;
