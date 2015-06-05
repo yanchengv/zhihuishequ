@@ -44,17 +44,20 @@
       </h3>
       <div id="timeline">
         <ul id="dates">
-          <li><a href="#2005">2005/10月</a></li>
-          <li><a href="#2006">2006/10月</a></li>
-          <li><a href="#2007">2007/10月</a></li>
-          <li><a href="#2008">2008/10月</a></li>
-          <li><a href="#2009">2009/10月</a></li>
-          <li><a href="#2010">2010/10月</a></li>
-          <li><a href="#2012">2012/10月</a></li>
-          <li><a href="#2014">2014/10月</a></li>
+
+            <!--<li><a href="#2005">2005/10月</a></li>-->
+            <!--<li><a href="#2006">2006/10月</a></li>-->
+
+          <%if !@events_date.nil?&&!@events_date.empty?%>
+          <% @events_date.each do |date|%>
+          <li><a href="#<%= date.id%>"><%= date.event_date%>月</a></li>
+          <%end%>
+
+          <%end%>
         </ul>
         <ul id="issues">
-          <li id="2005">
+
+      <!--    <li id="2005">
             <div class="us_picL">
               <div class="us_timeSpot">2014/10月</div>
             </div>
@@ -69,57 +72,34 @@
             <div class="us_picR">
               <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
             </div>
-          </li>
-          <li id="2007">
-            <div class="us_picL">
-              <div class="us_timeSpot">2014/10月</div>
-            </div>
-            <div class="us_picR">
-              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
-            </div>
-          </li>
-          <li id="2008">
-            <div class="us_picL">
-              <div class="us_timeSpot">2014/10月</div>
-            </div>
-            <div class="us_picR">
-              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
-            </div>
-          </li>
-          <li id="2009">
-            <div class="us_picL">
-              <div class="us_timeSpot">2014/10月</div>
-            </div>
-            <div class="us_picR">
-              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
-            </div>
-          </li>
-          <li id="2010">
-            <div class="us_picL">
-              <div class="us_timeSpot">2014/10月</div>
-            </div>
-            <div class="us_picR">
-              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
-            </div>
-          </li>
-          <li id="2012">
-            <div class="us_picL">
-              <div class="us_timeSpot">2014/10月</div>
-            </div>
-            <div class="us_picR">
-              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
-            </div>
-          </li>
-          <li id="2012">
-            <div class="us_picL">
-              <div class="us_timeSpot">2014/10月</div>
-            </div>
-            <div class="us_picR">
-              <p><a>参加“第一届移动时代金融安全产业挑战论坛”以及倪光南、吕述望等七位院士召开的第24届INTERNET安全利用学术研讨会</a></p>
-            </div>
-          </li>
+          </li>-->
+              <% if !@events.empty?%>
+             <% @events.each do |event|%>
+              <li id="<%= event.id%>">
+                <div class="us_picL">
+                  <div class="us_timeSpot"><%= event.event_date%>月</div>
+                </div>
+                <div class="us_picR">
+                  <p>
+                    <%if !event.content.nil? &&event.content!=''%>
+                       <%event.content.split("@#").each do |c|%>
+                           <%=c%><br>
+                        <%end%>
+                      <%end%>
+                  </p>
+                </div>
+              </li>
+              <%end%>
+          <%end%>
+
         </ul>
+
+
       </div>
+      <!--显示滚动箭头图标-->
+    <!--  <a href="#" id="prev">《</a>
+      <a href="#" id="next">》</a>-->
+
     </div>
   </div>
 </div>
@@ -243,7 +223,10 @@
         $("#timeline").timelinr({
             autoPlay: 'true',
             autoPlayDirection: 'forward',
-            startAt: 4  /*  默认显示第几个 */
+            autoPlayPause: 4000,
+//            prevButton: '#prev',
+//            nextButton: '#next',
+            startAt: 9  /*  默认显示第几个 */
         })
     });
     /*公司高管部分*/

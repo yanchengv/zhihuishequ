@@ -34,9 +34,7 @@ class HomeController < ApplicationController
   def about_us
       @events=Event.all().order(event_date: :asc)
       @events_date=Event.select(:event_date).order(event_date: :asc)
-      @events_date.each do |e|
-      p e.event_date
-      end
+
       render template: 'home/about_us', layout: 'about_us'
   end
 
