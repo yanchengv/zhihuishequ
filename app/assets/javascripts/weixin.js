@@ -15,7 +15,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// require turbolinks
 //= require mobile/classie.js
 //= require mobile/modernizr.custom.js
 //= require mobile/slick.min
