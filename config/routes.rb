@@ -23,6 +23,7 @@ Rails.application.routes.draw do
      get 'setting',to:'users#setting'
      post 'update',to:'users#update'
      post 'create',to:'users#create'
+      post 'update_password',to:'users#update_password'
     end
   end
 

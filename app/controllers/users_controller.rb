@@ -56,10 +56,29 @@ class UsersController < ApplicationController
       else
         flash[:flag] = '用户名不能为空！'
       end
-      redirect_to controller: :users, action: :setting
+      # redirect_to controller: :users, action: :setting
+      redirect_to :back
     end
 
+    def update_password
+      id=params[:user][:id]
+      password=params[:user][:password]
+      password2=params[:user][:password_confirmation]
 
+      if !password.nil? && password!=''
+        if password!=password2
+          flash[:flag] = '两次密码不一致！'
+          redirect_to :back  and return
+        end
+        @user=User.where(id:id).first
+        @user.update_attributes(password:password)
+        flash[:flag] = '密码修改成功！'
+      else
+        flash[:flag] = '密码不能为空！'
+
+      end
+      redirect_to :back
+    end
 
   private
   def user_params

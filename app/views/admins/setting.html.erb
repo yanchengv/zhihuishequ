@@ -1,7 +1,7 @@
 <div class="ds_box">
-  <h3 class="add_dsj">修改大事件</h3>
+  <h3 class="add_dsj">修改用户</h3>
 <h1>修改</h1>
-<div ><%= flash[:flag]%></div>
+<div ><font style="color: red"><%= flash[:flag]%></font></div>
   <table class="table2">
 <%=form_for :user,url: {controller: 'users',action: 'update',method: 'post'} do |f|%>
         <tr>
@@ -17,6 +17,30 @@
 
 <%end%>
 </table>
+
+
+
+
+  <table class="table2">
+    <%=form_for :user,url: {controller: 'users',action: 'update_password',method: 'post'} do |f|%>
+        <%=f.hidden_field :id,value:current_user.id%>
+        <tr>
+          <td width="50px">  <%= f.label '新密码'%></td>
+          <td>  <%=f.password_field :password%></td>
+        </tr>
+        <tr>
+          <td width="50px">  <%= f.label :password_confirmation, "确认密码" %></td>
+          <td>    <%= f.password_field :password_confirmation %></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> <%=f.submit '提交',:class=> "add",:style=>"padding:0 15px;"%></td>
+        </tr>
+
+
+
+    <%end%>
+  </table>
     </div>
 
 
