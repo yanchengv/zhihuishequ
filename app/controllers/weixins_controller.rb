@@ -21,7 +21,7 @@ class WeixinsController < ApplicationController
   end
 
   def about_us
-
+    @events=Event.all().order(event_date: :asc)
   end
 
   def join_us
