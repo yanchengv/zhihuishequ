@@ -4,24 +4,23 @@ ul,li{margin:0;padding:0;}
     margin:0 auto;
     }
 .hbg_list li{
-    width:44% !important;
+    width:90% !important;
     display: inline-block;
     font-family: "Microsoft YaHei",Arial;
-    float:left;
     text-align:center;
     position: relative;
     word-break: break-all;
     font-size:14px;
-    margin:1%;
     padding:15px 1% 1% 1%;
     min-height:120px;
-
+    margin:15px 0;
 }
 .hbg_list li.bg1{
     z-index:1;
     width:100%;
     height:auto;
     background:url(/images/hbg_MUnit1.jpg) no-repeat center center;
+    background-size:100%;
 
 }
 .hbg_list li.bg2{
@@ -29,6 +28,7 @@ ul,li{margin:0;padding:0;}
     width:100%;
     height:auto;
     background:url(/images/hbg_MUnit2.jpg) no-repeat center center;
+    background-size:100%;
 
 }
 .hbg_list li.bg3{
@@ -36,6 +36,7 @@ ul,li{margin:0;padding:0;}
     width:100%;
     height:auto;
     background:url(/images/hbg_MUnit3.jpg) no-repeat center center;
+    background-size:100%;
 
 }
 .hbg_list li.bg4{
@@ -43,6 +44,15 @@ ul,li{margin:0;padding:0;}
     width:100%;
     height:auto;
     background:url(/images/hbg_MUnit4.jpg) no-repeat center center;
+    background-size:100%;
+
+}
+.hbg_list li.bg5{
+    z-index:1;
+    width:100%;
+    height:auto;
+    background:url(/images/hbg_MUnit5.jpg) no-repeat center center;
+    background-size:100%;
 
 }
 .hbg_list li b{
@@ -75,4 +85,11 @@ ul,li{margin:0;padding:0;}
 }
 .hbg_list2_con{
     margin-top:30px;
+}
+.hgw_content h3{
+    font-size: 18px;
+    color: #333;
+    font-family: "Microsoft YaHei",Arial;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dcdcdc;
 }

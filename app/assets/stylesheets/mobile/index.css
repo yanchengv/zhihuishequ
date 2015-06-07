@@ -11,7 +11,7 @@ a{text-decoration: none;cursor:pointer}
 }
 .menu_box_m .right{
     float:left;
-    width:160px;
+    width:140px;
 }
 .menu_box_m .left .menu_box{
     width:78px;
@@ -27,7 +27,7 @@ a{text-decoration: none;cursor:pointer}
 }
 
 .menu_box_m .right .menu_box2{
-    width:158px;
+    width:138px;
     /*height:51px;*//*右侧有三个菜单时*/
     /*line-height:48px;*//*右侧有三个菜单时*/
     height:81px;
