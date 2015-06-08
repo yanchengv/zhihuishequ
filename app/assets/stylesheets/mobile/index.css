@@ -1,23 +1,23 @@
 p{margin:0;padding:0;}
 a{text-decoration: none;cursor:pointer}
 .menu_box_m{
-    width:320px;
+    width:290px;
     height:220px;
     margin:20px auto;
 }
 .menu_box_m .left{
     float:left;
-    width:180px;
+    width:160px;
 }
 .menu_box_m .right{
     float:left;
-    width:140px;
+    width:130px;
 }
 .menu_box_m .left .menu_box{
-    width:78px;
-    height:81px;
+    width:68px;
+    height:71px;
     line-height:73px;
-    font-size:16px;
+    font-size:14px;
     float:left;
     font-family: "Microsoft YaHei",Arial;
     -moz-border-radius: 5px; /* Firefox */
@@ -27,11 +27,11 @@ a{text-decoration: none;cursor:pointer}
 }
 
 .menu_box_m .right .menu_box2{
-    width:138px;
+    width:128px;
     /*height:51px;*//*右侧有三个菜单时*/
     /*line-height:48px;*//*右侧有三个菜单时*/
-    height:81px;
-    line-height:81px;
+    height:71px;
+    line-height:71px;
     font-size:16px;
     font-family: "Microsoft YaHei",Arial;
     -moz-border-radius: 5px; /* Firefox */
