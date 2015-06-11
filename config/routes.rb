@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       get 'about_us',to:'home#about_us'
       get 'join_us',to:'home#join_us'
       get 'app',to:'home#app'
+      get 'yikatong',to:'home#yikatong'
     end
   end
   resource :users do
@@ -70,6 +71,7 @@ Rails.application.routes.draw do
        get 'about_us',to:'weixins#about_us'
        get 'join_us',to:'weixins#join_us'
        get 'app',to:'weixins#app'
+       get 'yikatong',to:'weixins#yikatong'
      end
    end
 

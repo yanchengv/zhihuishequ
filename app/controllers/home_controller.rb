@@ -45,4 +45,8 @@ class HomeController < ApplicationController
   def app
 
   end
+
+    def yikatong
+      render text:"<h1>一卡通说明--网页版</h1>"
+    end
 end

@@ -31,4 +31,8 @@ class WeixinsController < ApplicationController
   def app
 
   end
+
+  def yikatong
+    render text:"<h1>一卡通说明--微信版</h1>"
+  end
 end
