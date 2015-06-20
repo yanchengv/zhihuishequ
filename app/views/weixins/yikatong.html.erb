@@ -1,39 +1,4 @@
-class WeixinsController < ApplicationController
-  layout 'weixin'
-
-  def index
-
-  end
-
-  def huishequ
-
-  end
-
-  def huishenghuo
-
-  end
-
-  def huibangong
-
-  end
-  def huigouwu
-
-  end
-
-  def about_us
-    @events=Event.all().order(event_date: :asc)
-  end
-
-  def join_us
-
-  end
-
-  def app
-
-  end
-
-  def yikatong
-    render text:"<h1>广福城一卡通卡片（广福卡）使用说明</h1>
+<h1>广福城一卡通卡片（广福卡）使用说明</h1>
 
 <h3>一、	卡片说明</h3>
 广福卡选用金融IC卡（CPU卡），称为智能卡。卡内具有微处理器CPU、存储单元：随机存储器RAM、程序存储器ROM、用户数据存储器EEPROM以及芯片操作系统COS。装有COS的CPU卡相当于一台微型计算机，不仅具有数据存储功能，同时具有命令处理和数据安全保护等功能，可确保卡内个人信息安全。
@@ -66,6 +31,3 @@ class WeixinsController < ApplicationController
 一卡通卡片丢失、挂失或损坏后，持卡人可凭本人身份证在一卡通营业厅补办，每张卡片收取补卡工本费30元。
 5、	其他
 如需其他技术支持服务，请致电云南彩立方数据科技有限公司一卡通服务中心：0871-64589208。
-"
-  end
-end
